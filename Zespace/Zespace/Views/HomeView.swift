@@ -12,15 +12,15 @@ struct HomeView: View {
     private var titleGameColor: String = "Game Color"
     private var titleNFC: String = "NFC"
     private var titleQRCode: String = "QRCode"
-
-
+    
+    
     var body: some View {
         NavigationView {
             ZStack{
                 HStack{
                     Group {
-//                        PrimaryButton(title: "NFC")
-//                        PrimaryButton(title: "QRCode")
+                        //                        PrimaryButton(title: "NFC")
+                        //                        PrimaryButton(title: "QRCode")
                         
                         Button {
                             selection = titleNFC
@@ -34,7 +34,7 @@ struct HomeView: View {
                         .background(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(.blue,lineWidth: 2)
-
+                            
                         )
                         
                         Button {
@@ -49,13 +49,13 @@ struct HomeView: View {
                         .background(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(.blue,lineWidth: 2)
-
+                            
                         )
-            
+                        
                     } .padding()
                 }
                 .frame(width:480 , height: 600, alignment: .top)
-               
+                
                 HStack{
                     Button {
                         selection = titleGameColor
@@ -69,7 +69,7 @@ struct HomeView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(.blue,lineWidth: 2)
-
+                        
                     )
                     
                 }.frame(width:480 , height: 200, alignment: .center)
@@ -78,12 +78,12 @@ struct HomeView: View {
                 NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0), tag: titleGameColor, selection: $selection) { EmptyView() }
                 NavigationLink(destination: Text("View NFC"), tag: titleNFC, selection: $selection) { EmptyView() }
                 NavigationLink(destination: Text("View QRCode"), tag: titleQRCode, selection: $selection) { EmptyView() }
-
-
+                
+                
                 
             }
-        }
-        .navigationBarTitle("Z Escape")
+            .navigationBarTitle("Z Escape")
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -95,7 +95,7 @@ struct HomeView_Previews: PreviewProvider {
 
 struct PrimaryButton: View {
     var title: String
-
+    
     var body: some View {
         Button {
             
