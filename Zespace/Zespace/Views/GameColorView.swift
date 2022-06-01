@@ -52,7 +52,7 @@ struct GameColorView: View {
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Your Score"), message: Text("\(computeScore())"))
                 }
-            }
+        }.padding([.leading, .bottom, .trailing],17)
     }
     
     func computeScore() -> Int {
