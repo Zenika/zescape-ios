@@ -8,81 +8,49 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var selection: String? = nil
-    private var titleGameColor: String = "Game Color"
+    
     private var titleNFC: String = "NFC"
     private var titleQRCode: String = "QRCode"
     
+    private var titleGameColor: String = "Game Color"
+    private var titleGameTwo: String = "Game 2"
+    private var titleGameThree: String = "Game 3"
     
     var body: some View {
+        
+        let titles = [titleNFC, titleQRCode]
+        let games = [titleGameColor, titleGameTwo, titleGameThree]
+        
+        
         NavigationView {
-            ZStack{
-                HStack{
-                    Group {
-                        //                        PrimaryButton(title: "NFC")
-                        //                        PrimaryButton(title: "QRCode")
-                        
-                        Button {
-                            selection = titleNFC
-                        } label: {
-                            Text(titleNFC)
-                                .font(.title)
-                                .fontWeight(.heavy)
-                                .padding()
+            ZStack {
+                // The frame modifier allows the view to expand horizontally
+                HStack {
+                    ForEach(titles, id: \.self) { item in
+                        NavigationLink(destination: Text(item)) {
+                            customTextStyle(title: item)
                         }
-                        .frame(minWidth: 150)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.blue,lineWidth: 2)
-                            
-                        )
-                        
-                        Button {
-                            selection = titleQRCode
-                        } label: {
-                            Text(titleQRCode)
-                                .font(.title)
-                                .fontWeight(.heavy)
-                                .padding()
-                        }
-                        .frame(minWidth: 150)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(.blue,lineWidth: 2)
-                            
-                        )
-                        
-                    } .padding()
-                }
-                .frame(width:480 , height: 600, alignment: .top)
-                
-                HStack{
-                    Button {
-                        selection = titleGameColor
-                    } label: {
-                        Text(titleGameColor)
-                            .font(.title)
-                            .fontWeight(.heavy)
-                            .padding()
                     }
-                    .frame(minWidth: 150)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(.blue,lineWidth: 2)
-                        
-                    )
-                    
-                }.frame(width:480 , height: 200, alignment: .center)
+                }.frame(width:400 , height: 500, alignment: .top)
                 
-                
-                NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0), tag: titleGameColor, selection: $selection) { EmptyView() }
-                NavigationLink(destination: Text("View NFC"), tag: titleNFC, selection: $selection) { EmptyView() }
-                NavigationLink(destination: Text("View QRCode"), tag: titleQRCode, selection: $selection) { EmptyView() }
-                
+                VStack {
+                    ForEach(games, id: \.self) { item in
+                        if(item == titleGameColor){
+                            NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0)) {
+                                customTextStyle(title: item)
+                            }
+                        }
+                        else{
+                            NavigationLink(destination: Text(item)) {
+                                customTextStyle(title: item)
+                            }
+                        }
+                    }
+                }.frame(width:400 , height: 300, alignment: .center)
                 
                 
             }
-            .navigationBarTitle("Z Escape")
+            .navigationTitle("Z Escape")
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
@@ -93,24 +61,19 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-struct PrimaryButton: View {
+struct customTextStyle: View {
     var title: String
     
     var body: some View {
-        Button {
-            
-        } label: {
-            Text(title)
-                .font(.title)
-                .fontWeight(.heavy)
-                .padding()
-        }
-        .frame(minWidth: 150)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(.blue,lineWidth: 2)
-            
-        )
+        Text(title)
+            .fontWeight(.heavy)
+            .foregroundColor(.blue)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(.blue,lineWidth: 2))
+            .font(.title)
     }
 }
 
