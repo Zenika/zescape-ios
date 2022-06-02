@@ -27,10 +27,19 @@ struct HomeView: View {
                 // The frame modifier allows the view to expand horizontally
                 HStack {
                     ForEach(titles, id: \.self) { item in
-                        NavigationLink(destination: Text(item)) {
-                            customTextStyle(title: item)
+                        if(item == titleNFC){
+                            NavigationLink(destination: Text(item)) {
+                                customTextStyle(title: item)
+                            }
+                        }
+                        else {
+                            
+                            NavigationLink(destination: QRCodeScannerView()) {
+                                customTextStyle(title: item)
+                            }
                         }
                     }
+                    .padding(10.0)
                 }.frame(width:400 , height: 500, alignment: .top)
                 
                 VStack {
@@ -46,10 +55,11 @@ struct HomeView: View {
                             }
                         }
                     }
-                }.frame(width:400 , height: 300, alignment: .center)
+                }.padding(10.0).frame(width:400 , height: 300, alignment: .center)
                 
                 
             }
+            .padding(.horizontal, 0.0)
             .navigationTitle("Z Escape")
         }.navigationViewStyle(StackNavigationViewStyle())
     }
