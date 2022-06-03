@@ -10,6 +10,7 @@
 		920EBAD72846352000AFB78E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD62846352000AFB78E /* SplashView.swift */; };
 		920EBAD92846356700AFB78E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD82846356700AFB78E /* HomeView.swift */; };
 		920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBADA2846364B00AFB78E /* GameColorView.swift */; };
+		9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */; };
 		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
 		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
 		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		920EBAD62846352000AFB78E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		920EBAD82846356700AFB78E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		920EBADA2846364B00AFB78E /* GameColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColorView.swift; sourceTree = "<group>"; };
+		9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerResultView.swift; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				920EBAD82846356700AFB78E /* HomeView.swift */,
 				920EBADA2846364B00AFB78E /* GameColorView.swift */,
 				92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */,
+				9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */,
 				920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */,
 				920EBAD72846352000AFB78E /* SplashView.swift in Sources */,
 				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
