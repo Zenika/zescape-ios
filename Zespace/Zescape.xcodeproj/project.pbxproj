@@ -10,7 +10,10 @@
 		920EBAD72846352000AFB78E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD62846352000AFB78E /* SplashView.swift */; };
 		920EBAD92846356700AFB78E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD82846356700AFB78E /* HomeView.swift */; };
 		920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBADA2846364B00AFB78E /* GameColorView.swift */; };
+		9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281198E28537A5D000B2BC5 /* ScanView.swift */; };
 		9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */; };
+		928194812849FE7700B1853A /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928194802849FE7700B1853A /* NFCUtility.swift */; };
+		92819483284A014E00B1853A /* NFCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92819482284A014E00B1853A /* NFCModel.swift */; };
 		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
 		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
 		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
@@ -43,7 +46,11 @@
 		920EBAD62846352000AFB78E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		920EBAD82846356700AFB78E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		920EBADA2846364B00AFB78E /* GameColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColorView.swift; sourceTree = "<group>"; };
+		9281198E28537A5D000B2BC5 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerResultView.swift; sourceTree = "<group>"; };
+		9281947F2849FDFB00B1853A /* Zescape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zescape.entitlements; sourceTree = "<group>"; };
+		928194802849FE7700B1853A /* NFCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
+		92819482284A014E00B1853A /* NFCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCModel.swift; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 				920EBADA2846364B00AFB78E /* GameColorView.swift */,
 				92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */,
 				9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */,
+				9281198E28537A5D000B2BC5 /* ScanView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,8 +126,9 @@
 		929AF1782845006100E43F51 /* Zescape */ = {
 			isa = PBXGroup;
 			children = (
-				92C48CB228479F14001C83F8 /* Delegate */,
-				92C48CAD284776D4001C83F8 /* ViewModel */,
+				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
+				92C48CB228479F14001C83F8 /* Utilities */,
+				92C48CAD284776D4001C83F8 /* Model */,
 				928C77DF28461273008E2085 /* Views */,
 				929AF1792845006100E43F51 /* ZespaceApp.swift */,
 				929AF17B2845006100E43F51 /* ContentView.swift */,
@@ -154,18 +163,20 @@
 			path = ZespaceUITests;
 			sourceTree = "<group>";
 		};
-		92C48CAD284776D4001C83F8 /* ViewModel */ = {
+		92C48CAD284776D4001C83F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				92819482284A014E00B1853A /* NFCModel.swift */,
 			);
-			path = ViewModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		92C48CB228479F14001C83F8 /* Delegate */ = {
+		92C48CB228479F14001C83F8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				928194802849FE7700B1853A /* NFCUtility.swift */,
 			);
-			path = Delegate;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92819483284A014E00B1853A /* NFCModel.swift in Sources */,
 				9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */,
 				920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */,
 				920EBAD72846352000AFB78E /* SplashView.swift in Sources */,
 				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
 				92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */,
 				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
+				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
+				928194812849FE7700B1853A /* NFCUtility.swift in Sources */,
 				929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -474,7 +489,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -508,7 +525,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

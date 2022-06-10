@@ -28,7 +28,7 @@ struct HomeView: View {
                 HStack {
                     ForEach(titles, id: \.self) { item in
                         if(item == titleNFC){
-                            NavigationLink(destination: Text(item)) {
+                            NavigationLink(destination: ScanView()) {
                                 customTextStyle(title: item)
                             }
                         }
