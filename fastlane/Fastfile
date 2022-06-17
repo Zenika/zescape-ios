@@ -8,6 +8,7 @@ platform :ios do
   desc "Build"
   lane :build do |options|
   # Build & export ipa
+    match(type: "adhoc")
     gym(
       scheme: "Zescape",
       silent: options[:silent] || true,
