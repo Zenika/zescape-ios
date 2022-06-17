@@ -1,0 +1,17 @@
+version: 2.1
+workflows:
+  testing:
+    jobs:
+      - runner
+jobs:
+  runner:
+    machine: true
+    resource_class: zenika/mobileapps
+    steps:
+      - checkout
+      - run: bundle install
+      - run:
+          name: Fastlane
+          command: bundle exec fastlane build
+      - store_artifacts:
+          path: output/Game.ipa

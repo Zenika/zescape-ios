@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "929AF1852845006500E43F51"
-               BuildableName = "ZespaceTests.xctest"
+               BuildableName = "ZescapeTests.xctest"
                BlueprintName = "ZescapeTests"
                ReferencedContainer = "container:Zescape.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "929AF18F2845006500E43F51"
-               BuildableName = "ZespaceUITests.xctest"
+               BuildableName = "ZescapeUITests.xctest"
                BlueprintName = "ZescapeUITests"
                ReferencedContainer = "container:Zescape.xcodeproj">
             </BuildableReference>

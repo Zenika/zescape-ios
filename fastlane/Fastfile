@@ -1,0 +1,48 @@
+default_platform :ios
+
+platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
+  desc "Build"
+  lane :build do |options|
+  # Build & export ipa
+    gym(
+      scheme: "Zescape",
+      silent: options[:silent] || true,
+      codesigning_identity: "iPhone Distribution: ZENIKA (KVW94B6WF8)",
+      project: "./Zescape/Zescape.xcodeproj",
+      configuration: "Release",
+      output_name: "Zescape"
+    )
+  end
+
+  # desc "Runs all the tests"
+  # lane :test do
+  #   scan
+  #   snapshot
+  # end
+
+  # desc "Ad-hoc build"
+  # lane :adhoc do
+  #   match(type: "adhoc")
+  #   gym(export_method: "ad-hoc")
+  # end
+
+  # desc "Submit a new Beta Build to Apple TestFlight"
+  # desc "This will also make sure the profile is up to date"
+  # lane :beta do
+  #   match(type: "appstore")
+  #   gym(export_method: "app-store")
+  # end
+
+  # desc "Deploy a new version to the App Store"
+  # lane :release do
+  #   # match(type: "appstore")
+  #   # snapshot
+  #   gym # Build your app - more options available
+  #   deliver(force: true)
+  #   # frameit
+  # end
+end

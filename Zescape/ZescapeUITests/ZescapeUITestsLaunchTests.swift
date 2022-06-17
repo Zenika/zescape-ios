@@ -7,7 +7,7 @@
 
 import XCTest
 
-class ZespaceUITestsLaunchTests: XCTestCase {
+class ZescapeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
