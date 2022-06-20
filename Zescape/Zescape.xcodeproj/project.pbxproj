@@ -10,6 +10,7 @@
 		920EBAD72846352000AFB78E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD62846352000AFB78E /* SplashView.swift */; };
 		920EBAD92846356700AFB78E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD82846356700AFB78E /* HomeView.swift */; };
 		920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBADA2846364B00AFB78E /* GameColorView.swift */; };
+		9271249B2860E43E00266293 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9271249A2860E43E00266293 /* CodeScanner */; };
 		9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281198E28537A5D000B2BC5 /* ScanView.swift */; };
 		9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */; };
 		928194812849FE7700B1853A /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928194802849FE7700B1853A /* NFCUtility.swift */; };
@@ -21,7 +22,6 @@
 		929AF18B2845006500E43F51 /* ZescapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF18A2845006500E43F51 /* ZescapeTests.swift */; };
 		929AF1952845006500E43F51 /* ZescapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1942845006500E43F51 /* ZescapeUITests.swift */; };
 		929AF1972845006500E43F51 /* ZescapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */; };
-		92BFD5E4285CD749000A4B6E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 92BFD5E3285CD749000A4B6E /* CodeScanner */; };
 		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92BFD5E4285CD749000A4B6E /* CodeScanner in Frameworks */,
+				9271249B2860E43E00266293 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,7 @@
 			);
 			name = Zescape;
 			packageProductDependencies = (
-				92BFD5E3285CD749000A4B6E /* CodeScanner */,
+				9271249A2860E43E00266293 /* CodeScanner */,
 			);
 			productName = Zespace;
 			productReference = 929AF1762845006100E43F51 /* Zescape.app */;
@@ -271,7 +271,7 @@
 			);
 			mainGroup = 929AF16D2845006100E43F51;
 			packageReferences = (
-				92BFD5E2285CD749000A4B6E /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 929AF1772845006100E43F51 /* Products */;
 			projectDirPath = "";
@@ -679,20 +679,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		92BFD5E2285CD749000A4B6E /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		92BFD5E3285CD749000A4B6E /* CodeScanner */ = {
+		9271249A2860E43E00266293 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 92BFD5E2285CD749000A4B6E /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
