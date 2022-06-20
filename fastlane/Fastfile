@@ -8,7 +8,7 @@ platform :ios do
   desc "Build"
   lane :build do |options|
   # Build & export ipa
-    match(type: "adhoc")
+    match(type: "adhoc", readonly: true)
     gym(
       scheme: "Zescape",
       silent: options[:silent] || true,
