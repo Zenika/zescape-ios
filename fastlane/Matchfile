@@ -1,4 +1,4 @@
-git_url("https://github.com/Zenika/iOS-Match-Certificate.git")
+git_url("git@github.com:Zenika/iOS-Match-Certificate.git")
 
 storage_mode("git")
 
