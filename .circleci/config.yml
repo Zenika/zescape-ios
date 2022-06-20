@@ -11,6 +11,9 @@ jobs:
       - checkout
       - run: bundle install
       - run:
+          name: list of certificates
+          command: security find-identity -v -p codesigning fastlane_tmp_keychain
+      - run:
           name: Fastlane
           command: bundle exec fastlane build
       - store_artifacts:
