@@ -12,7 +12,6 @@ platform :ios do
     gym(
       scheme: "Zescape",
       silent: options[:silent] || true,
-      codesigning_identity: "Apple Distribution: ZENIKA (KVW94B6WF8)",
       project: "./Zescape/Zescape.xcodeproj",
       configuration: "Release",
       output_name: "Zescape"
