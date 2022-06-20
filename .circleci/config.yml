@@ -6,7 +6,7 @@ workflows:
 jobs:
   runner:
     machine: true
-    resource_class: zenika/mobileapps
+    resource_class: zenika/lyon-mobileapps
     steps:
       - checkout
       - run: bundle install
