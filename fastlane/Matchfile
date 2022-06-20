@@ -6,6 +6,7 @@ type("adhoc") # The default type, can be: appstore, adhoc, enterprise or develop
 
 app_identifier("com.zenika.zescape")
 username("appleid.fastlane@zenika.com") # Your Apple Developer Portal username
+team_id "KVW94B6WF8"
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
