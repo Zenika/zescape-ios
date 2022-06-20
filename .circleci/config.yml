@@ -5,6 +5,8 @@ workflows:
       - runner
 jobs:
   runner:
+    environment:
+        FL_OUTPUT_DIR: output
     machine: true
     resource_class: zenika/lyon-mobileapps
     steps:
