@@ -2,10 +2,10 @@ git_url("https://github.com/Zenika/iOS-Match-Certificate.git")
 
 storage_mode("git")
 
-type("development") # The default type, can be: appstore, adhoc, enterprise or development
+type("adhoc") # The default type, can be: appstore, adhoc, enterprise or development
 
 # app_identifier(["tools.fastlane.app", "tools.fastlane.app2"])
-username("anthony.marquet@zenika.com") # Your Apple Developer Portal username
+username("appleid.fastlane@zenika.com") # Your Apple Developer Portal username
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
