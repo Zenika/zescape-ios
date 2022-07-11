@@ -13,13 +13,15 @@ struct HomeView: View {
     private var titleQRCode: String = "QRCode"
     
     private var titleGameColor: String = "Game Color"
-    private var titleGameTwo: String = "Game 2"
+    private var titleQuizGame: String = "Quiz Game"
     private var titleGameThree: String = "Game 3"
+    
+    @StateObject var quizManager = QuizManager()
     
     var body: some View {
         
         let titles = [titleNFC, titleQRCode]
-        let games = [titleGameColor, titleGameTwo, titleGameThree]
+        let games = [titleGameColor, titleQuizGame, titleGameThree]
         
         
         NavigationView {
@@ -48,6 +50,14 @@ struct HomeView: View {
                             NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0)) {
                                 customTextStyle(title: item)
                             }
+                        }
+                        else if(item == titleQuizGame){
+                            NavigationLink(destination: QuizView().environmentObject(quizManager))
+                            {
+                                customTextStyle(title: item)
+
+                            }
+                            
                         }
                         else{
                             NavigationLink(destination: Text(item)) {
