@@ -60,6 +60,7 @@
 		9281947F2849FDFB00B1853A /* Zescape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zescape.entitlements; sourceTree = "<group>"; };
 		928194802849FE7700B1853A /* NFCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
 		92819482284A014E00B1853A /* NFCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCModel.swift; sourceTree = "<group>"; };
+		9298D4D928881A6B00B9DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		929AF1782845006100E43F51 /* Zescape */ = {
 			isa = PBXGroup;
 			children = (
+				9298D4D928881A6B00B9DEDB /* Info.plist */,
 				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
 				92B361BC2872E5A70098972E /* Component */,
 				92C48CAD284776D4001C83F8 /* Model */,
@@ -538,7 +540,7 @@
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = Zescape/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -574,7 +576,7 @@
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = Zescape/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -24,7 +24,10 @@ class QuizManager: ObservableObject {
     
     // Variables to know if an answer has been selected and reached the end of quiz
     @Published private(set) var answerSelected = false
+    @Published private(set) var isValidated = false
     @Published private(set) var reachedEnd = false
+    
+
     
     // Call the fetchQuiz function on intialize of the class, asynchronously
     init() {
@@ -100,4 +103,9 @@ class QuizManager: ObservableObject {
             score += 1
         }
     }
+    
+    // Function to know that user click on Validate button
+    func setValidated(isVal: Bool) {
+        isValidated = isVal
+    }  
 }

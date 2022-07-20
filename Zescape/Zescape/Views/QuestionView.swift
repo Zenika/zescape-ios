@@ -9,22 +9,31 @@ import SwiftUI
 
 struct QuestionView: View {
     @EnvironmentObject var quizManager: QuizManager
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack(spacing: 40){
             
             ProgressBar(progress: quizManager.progress)
-
             HStack {
-                Text("QUIZ GAME")
-                    .foregroundColor(Color.red)
-                    .fontWeight(.heavy)
-                Spacer()
-                Text("\(quizManager.index + 1) sur \(quizManager.length)")
-                    .foregroundColor(Color.red)
-                    .fontWeight(.heavy)
+                VStack(alignment: .trailing) {
+                    Text("\(quizManager.index + 1) sur \(quizManager.length)")
+                        .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.trailing)
+                }
             }
             
+            HStack {
+                VStack(alignment: .leading) {
+                        Text("QUIZ TITLE")
+                            .font(.title)
+                            .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
+                            .fontWeight(.heavy)
+                }
+                Spacer()
+            }
+
             VStack(alignment: .leading, spacing: 20) {
                 Text(quizManager.question)
                     .font(.system(size: 20))
@@ -37,13 +46,28 @@ struct QuestionView: View {
                 }
             }
             
-            Button {
-                quizManager.goToNextQuestion()
-            } label: {
-                PrimaryButton(text: "Valider", background: quizManager.answerSelected ? Color("Brand Color") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+            if(quizManager.isValidated){
+                Button {
+                    quizManager.goToNextQuestion()
+                    quizManager.setValidated(isVal: false)
+
+                } label: {
+                    PrimaryButton(text: "Suivant", background: quizManager.answerSelected ? Color.init(hex: "#84C46C")! : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                }
+                //.disabled(!quizManager.answerSelected)
+                Spacer()
             }
-            .disabled(!quizManager.answerSelected)
-            Spacer()
+            else{
+                Button {
+                    quizManager.setValidated(isVal: true)
+
+                } label: {
+                    PrimaryButton(text: "Valider", background: quizManager.answerSelected ? Color.init(hex: "#84C46C")! : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                }
+                .disabled(!quizManager.answerSelected)
+                Spacer()
+            }
+            
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)

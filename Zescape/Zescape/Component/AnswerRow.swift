@@ -14,12 +14,24 @@ struct AnswerRow: View {
     
     var body: some View {
         HStack(spacing:20){
-            Image(systemName: "circle.fill")
-                .font(.caption)
+            
+            
+            if(isSelected){
+                Image(systemName: "circle.fill")
+                    .foregroundColor(Color.init(hex: "#306B1E"))
+                    .font(.caption)
+            }
+            else{
+                Image(systemName: "circle")
+                    .foregroundColor(Color.init(hex: "#306B1E"))
+                    .font(.caption)
+            }
             
             Text(answer.text)
+                .foregroundColor(Color.init(hex: "#306B1E"))
             
-            if isSelected {
+            
+            if quizManager.isValidated {
                 Spacer()
                 
                 Image(systemName: answer.isCorrect ? "checkmark.circle.fill" : "x.circle.fill")
@@ -31,7 +43,7 @@ struct AnswerRow: View {
         .foregroundColor(.blue)
         .background(.white)
         .cornerRadius(10)
-        .shadow(color: isSelected ? answer.isCorrect ? .green : .red : .gray, radius: 5, x: 0.5, y: 0.5)
+        .shadow(color: quizManager.isValidated ? answer.isCorrect ? .green : .red : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
             if !quizManager.answerSelected {
                 isSelected = true
