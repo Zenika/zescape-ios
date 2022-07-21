@@ -9,33 +9,33 @@ import SwiftUI
 
 struct QuizView: View {
     @EnvironmentObject var quizManager: QuizManager
+    @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
-        if quizManager.reachedEnd {
-            VStack(spacing: 20) {
-                Text("Quiz Game")
-
-                Text("Congratulations, you completed the game! 🥳")
-                
-                Text("You scored \(quizManager.score) out of \(quizManager.length)")
-                
-                Button {
-                    Task.init {
-                        await quizManager.fetchQuiz()
+            if quizManager.reachedEnd {
+                VStack(spacing: 20) {
+                    Text("Bravo ! 🥳")
+                        .font(Font.custom("Nunito-Regular", size: 28))
+                    
+                    Text("Votre score est de \(quizManager.score) sur \(quizManager.length)")
+                    
+                    NavigationLink {
+                         HomeView()
+                    } label: {
+                        PrimaryButton(text: "Revenir à l'écran d'accueil")
                     }
-                } label: {
-                    PrimaryButton(text: "Play again")
                 }
+                .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(colorScheme == .dark ?Color.black:Color.white)
+                .navigationBarTitle("Quiz") // delete if you want no title
+                .navigationBarTitleDisplayMode(.inline)
+            } else {
+                QuestionView()
+                    .environmentObject(quizManager)
             }
-            .foregroundColor(Color.red)
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(red: 0.984313725490196, green: 0.9294117647058824, blue: 0.8470588235294118))
-        } else {
-            QuestionView()
-                .environmentObject(quizManager)
         }
-    }
 }
 
 struct QuizView_Previews: PreviewProvider {

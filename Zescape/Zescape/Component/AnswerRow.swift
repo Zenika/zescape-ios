@@ -29,6 +29,7 @@ struct AnswerRow: View {
             
             Text(answer.text)
                 .foregroundColor(Color.init(hex: "#306B1E"))
+                .font(Font.custom("Nunito-Regular", size: 18))
             
             
             if quizManager.isValidated {
@@ -39,7 +40,7 @@ struct AnswerRow: View {
             }
         }
         .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: 400, alignment: .leading)
         .foregroundColor(.blue)
         .background(.white)
         .cornerRadius(10)

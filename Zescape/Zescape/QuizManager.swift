@@ -32,9 +32,10 @@ class QuizManager: ObservableObject {
     // Call the fetchQuiz function on intialize of the class, asynchronously
     init() {
         Task.init {
-            await fetchQuiz()
+            await fetchMock()
         }
     }
+    
     func fetchQuiz() async {
         guard let url = URL(string: "https://opentdb.com/api.php?amount=10") else { fatalError("Missing URL")}
         
@@ -67,6 +68,35 @@ class QuizManager: ObservableObject {
         }
         
         
+    }
+    
+    func fetchMock() async {
+        guard let url = Bundle.main.url(forResource: "questions", withExtension: "json")
+        else {
+            print("Json file not found")
+            return
+        }
+        do {
+            let data = (try? Data(contentsOf: url))!
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let decodedData = try decoder.decode(Quiz.self, from: data)
+            DispatchQueue.main.async {
+                // Reset variables before assigning new values, for when the user plays the game another time
+                self.index = 0
+                self.score = 0
+                self.progress = 0.00
+                self.reachedEnd = false
+                
+                // Set new values for all variables
+                self.quiz = decodedData.results
+                self.length = self.quiz.count
+                self.setQuestion()
+            }
+        }
+        catch {
+            print("Error fetching quiz: \(error)")
+        }
     }
     
     // Function to go to next question. If reached end of the quiz, set reachedEnd to true
@@ -107,5 +137,5 @@ class QuizManager: ObservableObject {
     // Function to know that user click on Validate button
     func setValidated(isVal: Bool) {
         isValidated = isVal
-    }  
+    }
 }

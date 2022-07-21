@@ -39,6 +39,8 @@ struct QRCodeScannerView: View {
                 }
             }
         }
+        .navigationBarTitle("QrCode") // delete if you want no title
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
