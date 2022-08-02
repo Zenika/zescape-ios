@@ -11,12 +11,13 @@ import SwiftUI
 class QuizManager: ObservableObject {
     // Variables to set quiz and length of quiz
     private(set) var quiz: [Quiz.Result] = []
-    @Published private(set) var length = 0
     
+    @Published private(set) var length = 0
+
     // Variables to set question and answers
     @Published private(set) var index = 0
-    @Published private(set) var question: AttributedString = ""
-    @Published private(set) var answerChoices: [Answer] = []
+    @Published var question: AttributedString = ""
+    @Published var answerChoices: [Answer] = []
     
     // Variables for score and progress
     @Published private(set) var score = 0
@@ -26,9 +27,7 @@ class QuizManager: ObservableObject {
     @Published private(set) var answerSelected = false
     @Published private(set) var isValidated = false
     @Published private(set) var reachedEnd = false
-    
 
-    
     // Call the fetchQuiz function on intialize of the class, asynchronously
     init() {
         Task.init {
@@ -125,17 +124,39 @@ class QuizManager: ObservableObject {
     }
     
     // Function to know that user selected an answer, and update the score
-    func selectAnswer(answer: Answer) {
+    func selectAnswer(answerId: UUID) {
+        for index in answerChoices.indices {
+            answerChoices[index].isSelected = false
+        }
+        if let index = answerChoices.firstIndex(where: {$0.id == answerId}) {
+            if answerId == answerChoices[index].id {
+                answerChoices[index].isSelected = true
+            }
+            else{
+                answerChoices[index].isSelected = false
+            }
+        }
+       
         answerSelected = true
-        
         // If answer is correct, increment score
-        if answer.isCorrect {
+        if retrieveAnswer(answerId: answerId).isCorrect {
             score += 1
         }
     }
-    
+        
     // Function to know that user click on Validate button
     func setValidated(isVal: Bool) {
         isValidated = isVal
+    }
+    
+    // Function to know that user click on Validate button
+    func retrieveAnswer(answerId: UUID) -> Answer {
+        var selectedAnswer:Answer = Answer(text: "", isCorrect: false, isSelected: false)
+        for index in answerChoices.indices {
+            if(answerId == answerChoices[index].id){
+                selectedAnswer =  answerChoices[index]
+            }
+        }
+        return selectedAnswer
     }
 }

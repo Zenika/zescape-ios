@@ -80,8 +80,7 @@ struct HomeView: View {
                 ToolbarItem(placement: .principal) { // <3>
                     VStack {
                         Image("Logo")
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.top)
+                            
                     }
                 }
             }

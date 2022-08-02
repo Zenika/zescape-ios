@@ -13,15 +13,19 @@ struct QuestionView: View {
     
     var body: some View {
         VStack(spacing: 30){
+            Spacer()
             ProgressBar(progress: quizManager.progress)
             HStack {
-                VStack {
+                HStack {
+                    Text("Quiz progression")
                     Text("\(quizManager.index + 1) sur \(quizManager.length)")
                         .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
                         .font(Font.custom("Nunito-Regular", size: 12))
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
+                .padding(.top, -20.0)
             }
+            
             
             HStack {
                 VStack(alignment: .leading) {
@@ -41,6 +45,10 @@ struct QuestionView: View {
                 ForEach(quizManager.answerChoices, id: \.id) { answer in
                     AnswerRow(answer: answer)
                         .environmentObject(quizManager)
+                        .onTapGesture {
+                            quizManager.selectAnswer(answerId: answer.id)
+                        }
+                        
                 }
             }
             
@@ -67,7 +75,6 @@ struct QuestionView: View {
         }
         .navigationBarTitle("Quiz") // delete if you want no title
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true) // hides the "back" or previous view title button
         .padding([.leading, .bottom, .trailing],17)
         
     }

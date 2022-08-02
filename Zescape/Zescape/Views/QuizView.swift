@@ -31,6 +31,14 @@ struct QuizView: View {
                 .background(colorScheme == .dark ?Color.black:Color.white)
                 .navigationBarTitle("Quiz") // delete if you want no title
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) { // <3>
+                        VStack {
+                            Image("Logo")
+                                
+                        }
+                    }
+                }
             } else {
                 QuestionView()
                     .environmentObject(quizManager)

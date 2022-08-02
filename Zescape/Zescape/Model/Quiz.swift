@@ -32,9 +32,9 @@ struct Quiz: Decodable {
         var answers: [Answer] {
             do {
                 // Formatting all answer strings into AttributedStrings and creating an instance of Answer for each
-                let correct = [Answer(text: try AttributedString(markdown: correctAnswer), isCorrect: true)]
+                let correct = [Answer(text: try AttributedString(markdown: correctAnswer), isCorrect: true, isSelected: false)]
                 let incorrects = try incorrectAnswers.map { answer in
-                    Answer(text: try AttributedString(markdown: answer), isCorrect: false)
+                    Answer(text: try AttributedString(markdown: answer), isCorrect: false, isSelected: false)
                 }
                 
                 // Merging the correct and incorrect arrays together
