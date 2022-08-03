@@ -46,7 +46,7 @@
 		92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C1287332CA0098972E /* PrimaryButton.swift */; };
 		92B361C42873344D0098972E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C32873344D0098972E /* Quiz.swift */; };
 		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
-		92FC20192875A5C500B55761 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManager.swift */; };
+		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
 		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
 		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
 /* End PBXBuildFile section */
@@ -111,7 +111,7 @@
 		92B361C1287332CA0098972E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		92B361C32873344D0098972E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
-		92FC20182875A5C500B55761 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		92FC20182875A5C500B55761 /* QuizManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerVM.swift; sourceTree = "<group>"; };
 		92FC201A2876FDC300B55761 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		92FC201C287828B600B55761 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +211,7 @@
 		929AF1782845006100E43F51 /* Zescape */ = {
 			isa = PBXGroup;
 			children = (
+				92E8AA6F289ABB6F0074265C /* ViewModel */,
 				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
 				92B361BC2872E5A70098972E /* Component */,
 				9298D4DA28881F3C00B9DEDB /* Fonts */,
@@ -222,7 +223,6 @@
 				929AF17B2845006100E43F51 /* ContentView.swift */,
 				929AF17D2845006500E43F51 /* Assets.xcassets */,
 				929AF17F2845006500E43F51 /* Preview Content */,
-				92FC20182875A5C500B55761 /* QuizManager.swift */,
 			);
 			path = Zescape;
 			sourceTree = "<group>";
@@ -279,6 +279,14 @@
 				92FC201C287828B600B55761 /* Color.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		92E8AA6F289ABB6F0074265C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92FC20182875A5C500B55761 /* QuizManagerVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,7 +455,7 @@
 				92B361B92872E38F0098972E /* QuestionView.swift in Sources */,
 				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
 				92FC201B2876FDC300B55761 /* QuizView.swift in Sources */,
-				92FC20192875A5C500B55761 /* QuizManager.swift in Sources */,
+				92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */,
 				928194812849FE7700B1853A /* NFCUtility.swift in Sources */,
 				92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */,
 				92B361BB2872E4BD0098972E /* ProgressBar.swift in Sources */,
@@ -614,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
@@ -650,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;

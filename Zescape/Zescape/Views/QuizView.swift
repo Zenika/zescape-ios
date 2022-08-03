@@ -8,16 +8,33 @@
 import SwiftUI
 
 struct QuizView: View {
-    @EnvironmentObject var quizManager: QuizManager
+    @EnvironmentObject var quizManager: QuizManagerVM
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
             if quizManager.reachedEnd {
                 VStack(spacing: 20) {
-                    Text("Bravo ! 🥳")
-                        .font(Font.custom("Nunito-Regular", size: 28))
+                    if(quizManager.score >= 5 && quizManager.score < 10){
+                        Text("Bravo 👏 ")
+                            .font(Font.custom("Nunito-Regular", size: 28))
+                        Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
+                    }
+                    else if(quizManager.score == 10){
+                        Text("Waouh, c’est juste 👌 !")
+                            .font(Font.custom("Nunito-Regular", size: 28))
+                        Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
+                    }
+                    else if(quizManager.score >= 1 && quizManager.score < 5){
+                        Text("C’est pas mal  🙂")
+                            .font(Font.custom("Nunito-Regular", size: 28))
+                        Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
+                    }
+                    else{
+                        Text("Ce n’est pas si grave  🤗")
+                            .font(Font.custom("Nunito-Regular", size: 28))
+                        Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
+                    }
                     
-                    Text("Votre score est de \(quizManager.score) sur \(quizManager.length)")
                     
                     NavigationLink {
                          HomeView()
@@ -49,6 +66,6 @@ struct QuizView: View {
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         QuizView()
-            .environmentObject(QuizManager())
+            .environmentObject(QuizManagerVM())
     }
 }

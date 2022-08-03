@@ -16,7 +16,7 @@ struct HomeView: View {
     private var titleQuizGame: String = "Quiz Game"
     private var titleGameThree: String = "Game 3"
     
-    @StateObject var quizManager = QuizManager()
+    @StateObject var quizManager = QuizManagerVM()
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {

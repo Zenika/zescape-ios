@@ -1,5 +1,5 @@
 //
-//  QuizManager.swift
+//  QuizManagerVM.swift
 //  Zescape
 //
 //  Created by Anthony on 06/07/2022.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class QuizManager: ObservableObject {
+class QuizManagerVM: ObservableObject {
     // Variables to set quiz and length of quiz
     private(set) var quiz: [Quiz.Result] = []
     

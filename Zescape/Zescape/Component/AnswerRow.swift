@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnswerRow: View {
-    @EnvironmentObject var quizManager: QuizManager
+    @EnvironmentObject var quizManager: QuizManagerVM
     var answer: Answer
     
     var body: some View {
@@ -49,6 +49,6 @@ struct AnswerRow: View {
 struct AnswerRow_Previews: PreviewProvider {
     static var previews: some View {
         AnswerRow(answer: Answer(text: "Single", isCorrect:  false, isSelected: false))
-            .environmentObject(QuizManager())
+            .environmentObject(QuizManagerVM())
     }
 }

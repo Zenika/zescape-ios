@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @EnvironmentObject var quizManager: QuizManager
+    @EnvironmentObject var quizManager: QuizManagerVM
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -83,6 +83,6 @@ struct QuestionView: View {
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()
-            .environmentObject(QuizManager())
+            .environmentObject(QuizManagerVM())
     }
 }
