@@ -21,6 +21,8 @@ struct ScanView: View {
             
                 Text(nfcModel?.name ?? "Scan NFC Tag")
             }
+            .navigationBarTitle("NFC") // delete if you want no title
+            .navigationBarTitleDisplayMode(.inline)
         
     }
 }

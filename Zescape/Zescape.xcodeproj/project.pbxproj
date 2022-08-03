@@ -15,6 +15,23 @@
 		9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */; };
 		928194812849FE7700B1853A /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928194802849FE7700B1853A /* NFCUtility.swift */; };
 		92819483284A014E00B1853A /* NFCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92819482284A014E00B1853A /* NFCModel.swift */; };
+		9298D4EB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */; };
+		9298D4EC28881F5D00B9DEDB /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */; };
+		9298D4ED28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */; };
+		9298D4EE28881F5D00B9DEDB /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */; };
+		9298D4EF28881F5D00B9DEDB /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */; };
+		9298D4F028881F5D00B9DEDB /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */; };
+		9298D4F128881F5D00B9DEDB /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */; };
+		9298D4F228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */; };
+		9298D4F328881F5D00B9DEDB /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */; };
+		9298D4F428881F5D00B9DEDB /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */; };
+		9298D4F528881F5D00B9DEDB /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */; };
+		9298D4F628881F5D00B9DEDB /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */; };
+		9298D4F728881F5D00B9DEDB /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */; };
+		9298D4F828881F5D00B9DEDB /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */; };
+		9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */; };
+		9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */; };
+		9298D4FF2888322200B9DEDB /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4FE2888322200B9DEDB /* questions.json */; };
 		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
 		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
 		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
@@ -22,7 +39,16 @@
 		929AF18B2845006500E43F51 /* ZescapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF18A2845006500E43F51 /* ZescapeTests.swift */; };
 		929AF1952845006500E43F51 /* ZescapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1942845006500E43F51 /* ZescapeUITests.swift */; };
 		929AF1972845006500E43F51 /* ZescapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */; };
+		92B361B92872E38F0098972E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361B82872E38F0098972E /* QuestionView.swift */; };
+		92B361BB2872E4BD0098972E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BA2872E4BD0098972E /* ProgressBar.swift */; };
+		92B361BE2872E7130098972E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BD2872E7130098972E /* Answer.swift */; };
+		92B361C02872E76B0098972E /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BF2872E76B0098972E /* AnswerRow.swift */; };
+		92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C1287332CA0098972E /* PrimaryButton.swift */; };
+		92B361C42873344D0098972E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C32873344D0098972E /* Quiz.swift */; };
 		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
+		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
+		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
+		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +77,23 @@
 		9281947F2849FDFB00B1853A /* Zescape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zescape.entitlements; sourceTree = "<group>"; };
 		928194802849FE7700B1853A /* NFCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
 		92819482284A014E00B1853A /* NFCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCModel.swift; sourceTree = "<group>"; };
+		9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9298D4FE2888322200B9DEDB /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +104,16 @@
 		929AF1902845006500E43F51 /* ZescapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZescapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1942845006500E43F51 /* ZescapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZescapeUITests.swift; sourceTree = "<group>"; };
 		929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZescapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92B361B82872E38F0098972E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		92B361BA2872E4BD0098972E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		92B361BD2872E7130098972E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		92B361BF2872E76B0098972E /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		92B361C1287332CA0098972E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		92B361C32873344D0098972E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		92FC20182875A5C500B55761 /* QuizManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerVM.swift; sourceTree = "<group>"; };
+		92FC201A2876FDC300B55761 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		92FC201C287828B600B55761 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +151,41 @@
 				92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */,
 				9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */,
 				9281198E28537A5D000B2BC5 /* ScanView.swift */,
+				92B361B82872E38F0098972E /* QuestionView.swift */,
+				92FC201A2876FDC300B55761 /* QuizView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9298D4DA28881F3C00B9DEDB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */,
+				9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */,
+				9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */,
+				9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */,
+				9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */,
+				9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */,
+				9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */,
+				9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */,
+				9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */,
+				9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */,
+				9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */,
+				9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */,
+				9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */,
+				9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */,
+				9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */,
+				9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9298D4FB2888316C00B9DEDB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9298D4FE2888322200B9DEDB /* questions.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		929AF16D2845006100E43F51 = {
@@ -127,9 +212,13 @@
 			isa = PBXGroup;
 			children = (
 				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
-				92C48CB228479F14001C83F8 /* Utilities */,
+				92B361BC2872E5A70098972E /* Component */,
+				9298D4DA28881F3C00B9DEDB /* Fonts */,
 				92C48CAD284776D4001C83F8 /* Model */,
+				9298D4FB2888316C00B9DEDB /* Mocks */,
+				92C48CB228479F14001C83F8 /* Utilities */,
 				928C77DF28461273008E2085 /* Views */,
+				92E8AA6F289ABB6F0074265C /* ViewModel */,
 				929AF1792845006100E43F51 /* ZespaceApp.swift */,
 				929AF17B2845006100E43F51 /* ContentView.swift */,
 				929AF17D2845006500E43F51 /* Assets.xcassets */,
@@ -163,10 +252,22 @@
 			path = ZescapeUITests;
 			sourceTree = "<group>";
 		};
+		92B361BC2872E5A70098972E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				92B361BA2872E4BD0098972E /* ProgressBar.swift */,
+				92B361BF2872E76B0098972E /* AnswerRow.swift */,
+				92B361C1287332CA0098972E /* PrimaryButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		92C48CAD284776D4001C83F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				92819482284A014E00B1853A /* NFCModel.swift */,
+				92B361BD2872E7130098972E /* Answer.swift */,
+				92B361C32873344D0098972E /* Quiz.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,8 +276,17 @@
 			isa = PBXGroup;
 			children = (
 				928194802849FE7700B1853A /* NFCUtility.swift */,
+				92FC201C287828B600B55761 /* Color.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		92E8AA6F289ABB6F0074265C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92FC20182875A5C500B55761 /* QuizManagerVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +400,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				929AF1812845006500E43F51 /* Preview Assets.xcassets in Resources */,
+				9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */,
+				9298D4F628881F5D00B9DEDB /* Nunito-ExtraLight.ttf in Resources */,
+				9298D4F228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf in Resources */,
 				929AF17E2845006500E43F51 /* Assets.xcassets in Resources */,
+				9298D4FF2888322200B9DEDB /* questions.json in Resources */,
+				9298D4F428881F5D00B9DEDB /* Nunito-ExtraBold.ttf in Resources */,
+				9298D4F328881F5D00B9DEDB /* Nunito-BoldItalic.ttf in Resources */,
+				9298D4EE28881F5D00B9DEDB /* Nunito-Medium.ttf in Resources */,
+				9298D4F028881F5D00B9DEDB /* Nunito-Black.ttf in Resources */,
+				9298D4F828881F5D00B9DEDB /* Nunito-SemiBold.ttf in Resources */,
+				9298D4EC28881F5D00B9DEDB /* Nunito-Bold.ttf in Resources */,
+				9298D4EF28881F5D00B9DEDB /* Nunito-Regular.ttf in Resources */,
+				9298D4F528881F5D00B9DEDB /* Nunito-Light.ttf in Resources */,
+				9298D4F128881F5D00B9DEDB /* Nunito-MediumItalic.ttf in Resources */,
+				9298D4ED28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf in Resources */,
+				9298D4F728881F5D00B9DEDB /* Nunito-LightItalic.ttf in Resources */,
+				9298D4EB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +449,17 @@
 				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
 				92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */,
 				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
+				92B361BE2872E7130098972E /* Answer.swift in Sources */,
+				92FC201D287828B600B55761 /* Color.swift in Sources */,
+				92B361C02872E76B0098972E /* AnswerRow.swift in Sources */,
+				92B361B92872E38F0098972E /* QuestionView.swift in Sources */,
 				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
+				92FC201B2876FDC300B55761 /* QuizView.swift in Sources */,
+				92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */,
 				928194812849FE7700B1853A /* NFCUtility.swift in Sources */,
+				92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */,
+				92B361BB2872E4BD0098972E /* ProgressBar.swift in Sources */,
+				92B361C42873344D0098972E /* Quiz.swift in Sources */,
 				929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
@@ -494,7 +631,7 @@
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = Zescape/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -510,7 +647,7 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
-				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -522,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;
@@ -530,7 +668,7 @@
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = Zescape/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -546,7 +684,7 @@
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.zenika.zescape";
+				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -52,7 +52,10 @@ struct GameColorView: View {
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Your Score"), message: Text("\(computeScore())"))
                 }
-        }.padding([.leading, .bottom, .trailing],17)
+        }
+        .padding([.leading, .bottom, .trailing],17)
+        .navigationBarTitle("Game Color") // delete if you want no title
+                .navigationBarTitleDisplayMode(.inline)
     }
     
     func computeScore() -> Int {

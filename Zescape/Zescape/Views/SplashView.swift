@@ -13,13 +13,16 @@ struct SplashView: View {
     
     var body: some View {
         VStack {
+            
             if self.isActive {
                 HomeView()
             } else {
-                Text("Awesome Splash Screen!")
-                    .font(Font.largeTitle)
+
+                Image("splashscreen")
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // 1
+        .background(Color.black)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation {
