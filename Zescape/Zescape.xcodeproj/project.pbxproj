@@ -211,7 +211,6 @@
 		929AF1782845006100E43F51 /* Zescape */ = {
 			isa = PBXGroup;
 			children = (
-				92E8AA6F289ABB6F0074265C /* ViewModel */,
 				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
 				92B361BC2872E5A70098972E /* Component */,
 				9298D4DA28881F3C00B9DEDB /* Fonts */,
@@ -219,6 +218,7 @@
 				9298D4FB2888316C00B9DEDB /* Mocks */,
 				92C48CB228479F14001C83F8 /* Utilities */,
 				928C77DF28461273008E2085 /* Views */,
+				92E8AA6F289ABB6F0074265C /* ViewModel */,
 				929AF1792845006100E43F51 /* ZespaceApp.swift */,
 				929AF17B2845006100E43F51 /* ContentView.swift */,
 				929AF17D2845006500E43F51 /* Assets.xcassets */,
