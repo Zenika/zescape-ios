@@ -14,7 +14,7 @@ struct QuizView: View {
     var body: some View {
             if quizManager.reachedEnd {
                 VStack(spacing: 20) {
-                    if(quizManager.score >= 5 && quizManager.score < 10){
+                    if(quizManager.score >= 7 && quizManager.score < 10){
                         Text("Bravo 👏 ")
                             .font(Font.custom("Nunito-Regular", size: 28))
                         Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
@@ -24,13 +24,13 @@ struct QuizView: View {
                             .font(Font.custom("Nunito-Regular", size: 28))
                         Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
                     }
-                    else if(quizManager.score >= 1 && quizManager.score < 5){
-                        Text("C’est pas mal  🙂")
+                    else if(quizManager.score >= 4 && quizManager.score < 7){
+                        Text("C’est pas si mal 🙂")
                             .font(Font.custom("Nunito-Regular", size: 28))
                         Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
                     }
                     else{
-                        Text("Ce n’est pas si grave  🤗")
+                        Text("Ce n’est pas si grave 🤗")
                             .font(Font.custom("Nunito-Regular", size: 28))
                         Text("Ton score est de \(quizManager.score) sur \(quizManager.length)")
                     }
@@ -39,7 +39,9 @@ struct QuizView: View {
                     NavigationLink {
                          HomeView()
                     } label: {
-                        PrimaryButton(text: "Revenir à l'écran d'accueil")
+                        PrimaryButton(text: "Revenir à l'écran d'accueil",
+                                      foreground: quizManager.answerSelected ? Color.init(hex: "#FFFFFF")! : Color.init(hex:"#A8A29E") ?? Color(hue: 1.0, saturation: 0.0, brightness: 1.0, opacity: 1.327),
+                                      background: quizManager.answerSelected ? Color.init(hex: "#84C46C")! : Color.init(hex:"#E7E5E4") ?? Color(hue: 1.0, saturation: 0.0, brightness: 1.0, opacity: 1.327))
                     }
                 }
                 .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
