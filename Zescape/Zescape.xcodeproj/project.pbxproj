@@ -32,6 +32,7 @@
 		9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */; };
 		9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */; };
 		9298D4FF2888322200B9DEDB /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4FE2888322200B9DEDB /* questions.json */; };
+		929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA91928A2A1E60097B06B /* FloatingMenu.swift */; };
 		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
 		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
 		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 		9298D4FE2888322200B9DEDB /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		929AA91928A2A1E60097B06B /* FloatingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenu.swift; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				92B361BF2872E76B0098972E /* AnswerRow.swift */,
 				92B361C1287332CA0098972E /* PrimaryButton.swift */,
 				92E8AA70289C11D60074265C /* CountdownTimer.swift */,
+				929AA91928A2A1E60097B06B /* FloatingMenu.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
 				92B361BE2872E7130098972E /* Answer.swift in Sources */,
 				92FC201D287828B600B55761 /* Color.swift in Sources */,
+				929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */,
 				92B361C02872E76B0098972E /* AnswerRow.swift in Sources */,
 				92B361B92872E38F0098972E /* QuestionView.swift in Sources */,
 				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
