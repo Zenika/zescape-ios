@@ -16,6 +16,9 @@ struct HomeView: View {
     private var titleQuizGame: String = "Quiz Game"
     private var titleGameThree: String = "Game 3"
     
+    @State var counter: Int = 0
+    var countTo: Int = 60
+    
     @StateObject var quizManager = QuizManagerVM()
     @Environment(\.colorScheme) var colorScheme
     
@@ -31,16 +34,22 @@ struct HomeView: View {
                     Text("NOM DU Z GAME")
                         .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
                         .font(Font.custom("Nunito-Regular", size: 36))
-                    
-                    Text(" Volcamp is on 🔥 Retrouve les Hot Z et allume toi aussi le feu  🔥 🔥")
-                        .foregroundColor(Color.init(hex: "#A3A3A3"))
-                        .font(Font.custom("Nunito-Regular", size: 16))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 50.0)
-
-                    
                 }.frame(width:400 , height: 700, alignment: .top)
-              
+                
+                VStack {
+                    CountdownTimer()
+                    Text("🔥 Le temps est compté 🔥")
+                        .font(Font.custom("Nunito-Regular", size: 16))
+                        .padding(.bottom, 5.0)
+                    
+                    HStack {
+                        Text("Vous avez X minutes pour trouver tous les indices qui vous permettront d’arriver au coffre ... Bon courage !")
+                            .font(Font.custom("Nunito-Regular", size: 14))
+                    }
+                    .padding(.horizontal, 30.0)
+                    
+                }.frame(width:400 , height: 550, alignment: .top)
+                
                 HStack {
                     ForEach(titles, id: \.self) { item in
                         if(item == titleNFC){
@@ -56,7 +65,7 @@ struct HomeView: View {
                         }
                     }
                     .padding(10.0)
-                }.frame(width:400 , height: 500, alignment: .top)
+                }.frame(width:400 , height: 200, alignment: .bottom)
                 
                 VStack {
                     ForEach(games, id: \.self) { item in
@@ -74,13 +83,13 @@ struct HomeView: View {
                             
                         }
                     }
-                }.padding(10.0).frame(width:400 , height: 300, alignment: .center)
+                }.padding(10.0).frame(width:400 , height: 500, alignment: .bottom)
             }
             .toolbar {
                 ToolbarItem(placement: .principal) { // <3>
                     VStack {
                         Image("Logo")
-                            
+                        
                     }
                 }
             }

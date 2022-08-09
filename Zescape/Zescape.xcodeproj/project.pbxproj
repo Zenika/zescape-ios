@@ -46,6 +46,7 @@
 		92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C1287332CA0098972E /* PrimaryButton.swift */; };
 		92B361C42873344D0098972E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C32873344D0098972E /* Quiz.swift */; };
 		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
+		92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8AA70289C11D60074265C /* CountdownTimer.swift */; };
 		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
 		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
 		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
@@ -111,6 +112,7 @@
 		92B361C1287332CA0098972E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		92B361C32873344D0098972E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		92E8AA70289C11D60074265C /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		92FC20182875A5C500B55761 /* QuizManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerVM.swift; sourceTree = "<group>"; };
 		92FC201A2876FDC300B55761 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		92FC201C287828B600B55761 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				92B361BA2872E4BD0098972E /* ProgressBar.swift */,
 				92B361BF2872E76B0098972E /* AnswerRow.swift */,
 				92B361C1287332CA0098972E /* PrimaryButton.swift */,
+				92E8AA70289C11D60074265C /* CountdownTimer.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */,
 				920EBAD72846352000AFB78E /* SplashView.swift in Sources */,
 				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
+				92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */,
 				92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */,
 				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
 				92B361BE2872E7130098972E /* Answer.swift in Sources */,
