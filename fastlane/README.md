@@ -15,6 +15,22 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
+### ios bump_version_number_and_build_number
+
+```sh
+[bundle exec] fastlane ios bump_version_number_and_build_number
+```
+
+Bump version and build number
+
+### ios add_badge_alpha
+
+```sh
+[bundle exec] fastlane ios add_badge_alpha
+```
+
+
+
 ### ios build
 
 ```sh

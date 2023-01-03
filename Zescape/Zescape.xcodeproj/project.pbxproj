@@ -387,7 +387,7 @@
 			);
 			mainGroup = 929AF16D2845006100E43F51;
 			packageReferences = (
-				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */,
 			);
 			productRefGroup = 929AF1772845006100E43F51 /* Products */;
 			projectDirPath = "";
@@ -634,7 +634,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202301031509;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
@@ -671,9 +671,10 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202301031509;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zescape/Info.plist;
@@ -693,6 +694,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.zenika.zescape";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -705,7 +707,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -727,7 +729,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -748,7 +750,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -768,7 +770,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -825,7 +827,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
 			requirement = {
@@ -838,7 +840,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9271249A2860E43E00266293 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */;
 			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */

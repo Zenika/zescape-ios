@@ -1,9 +1,23 @@
 default_platform :ios
 
 platform :ios do
-  # before_all do
-  #   setup_circle_ci
-  # end
+
+  desc "Bump version and build number"
+  lane :bump_version_number_and_build_number do
+    # VERSION = last_git_tag(pattern: "*.*.*.*")
+    # increment_version_number_in_xcodeproj(
+    #   version_number: VERSION
+    # )
+    increment_build_number_in_xcodeproj(
+        target: "Zescape",
+        build_number: Time.now.strftime('%Y%m%d%H%M'),
+        xcodeproj: "./Zescape/Zescape.xcodeproj"
+    )
+  end
+
+  lane :add_badge_alpha do |options|
+    add_badge(alpha: true)
+  end
 
   desc "Build"
   lane :build do |options|
@@ -17,32 +31,4 @@ platform :ios do
       output_name: "Zescape"
     )
   end
-
-  # desc "Runs all the tests"
-  # lane :test do
-  #   scan
-  #   snapshot
-  # end
-
-  # desc "Ad-hoc build"
-  # lane :adhoc do
-  #   match(type: "adhoc")
-  #   gym(export_method: "ad-hoc")
-  # end
-
-  # desc "Submit a new Beta Build to Apple TestFlight"
-  # desc "This will also make sure the profile is up to date"
-  # lane :beta do
-  #   match(type: "appstore")
-  #   gym(export_method: "app-store")
-  # end
-
-  # desc "Deploy a new version to the App Store"
-  # lane :release do
-  #   # match(type: "appstore")
-  #   # snapshot
-  #   gym # Build your app - more options available
-  #   deliver(force: true)
-  #   # frameit
-  # end
 end

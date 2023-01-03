@@ -51,47 +51,13 @@ struct HomeView: View {
                 }.frame(width:400 , height: 550, alignment: .top)
                 
                 ZStack(alignment: .bottomTrailing) {
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            FloatingMenu()
-                                .padding()
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    FloatingMenu()
+                        .padding()
                 }
                 
-//                HStack {
-//                    ForEach(titles, id: \.self) { item in
-//                        if(item == titleNFC){
-//                            NavigationLink(destination: ScanView()) {
-//                                customTextStyle(title: item)
-//                            }
-//                        }
-//                        else {
-//                            
-//                            NavigationLink(destination: QRCodeScannerView()) {
-//                                customTextStyle(title: item)
-//                            }
-//                        }
-//                    }
-//                    .padding(10.0)
-//                }.frame(width:400 , height: 200, alignment: .bottom)
-                
-//                VStack {
-//                    ForEach(games, id: \.self) { item in
-//                        if(item == titleGameColor){
-//                            NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0)) {
-//                                customTextStyle(title: item)
-//                            }
-//                        }
-//                        else if(item == titleQuizGame){
-//                            NavigationLink(destination: QuizView().environmentObject(quizManager))
-//                            {
-//                                customTextStyle(title: item)
-//
-//                            }
-//
-//                        }
-//                    }
-//                }.padding(10.0).frame(width:400 , height: 500, alignment: .bottom)
             }
             .toolbar {
                 ToolbarItem(placement: .principal) { // <3>
