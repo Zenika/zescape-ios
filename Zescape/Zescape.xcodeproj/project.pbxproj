@@ -32,6 +32,7 @@
 		9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */; };
 		9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */; };
 		9298D4FF2888322200B9DEDB /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4FE2888322200B9DEDB /* questions.json */; };
+		929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA91928A2A1E60097B06B /* FloatingMenu.swift */; };
 		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
 		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
 		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C1287332CA0098972E /* PrimaryButton.swift */; };
 		92B361C42873344D0098972E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C32873344D0098972E /* Quiz.swift */; };
 		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
+		92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8AA70289C11D60074265C /* CountdownTimer.swift */; };
 		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
 		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
 		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
@@ -94,6 +96,7 @@
 		9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 		9298D4FE2888322200B9DEDB /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		929AA91928A2A1E60097B06B /* FloatingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenu.swift; sourceTree = "<group>"; };
 		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
 		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		92B361C1287332CA0098972E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		92B361C32873344D0098972E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		92E8AA70289C11D60074265C /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		92FC20182875A5C500B55761 /* QuizManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerVM.swift; sourceTree = "<group>"; };
 		92FC201A2876FDC300B55761 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		92FC201C287828B600B55761 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				92B361BA2872E4BD0098972E /* ProgressBar.swift */,
 				92B361BF2872E76B0098972E /* AnswerRow.swift */,
 				92B361C1287332CA0098972E /* PrimaryButton.swift */,
+				92E8AA70289C11D60074265C /* CountdownTimer.swift */,
+				929AA91928A2A1E60097B06B /* FloatingMenu.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -381,7 +387,7 @@
 			);
 			mainGroup = 929AF16D2845006100E43F51;
 			packageReferences = (
-				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */,
 			);
 			productRefGroup = 929AF1772845006100E43F51 /* Products */;
 			projectDirPath = "";
@@ -447,10 +453,12 @@
 				920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */,
 				920EBAD72846352000AFB78E /* SplashView.swift in Sources */,
 				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
+				92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */,
 				92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */,
 				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
 				92B361BE2872E7130098972E /* Answer.swift in Sources */,
 				92FC201D287828B600B55761 /* Color.swift in Sources */,
+				929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */,
 				92B361C02872E76B0098972E /* AnswerRow.swift in Sources */,
 				92B361B92872E38F0098972E /* QuestionView.swift in Sources */,
 				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
@@ -626,7 +634,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202301031509;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
@@ -663,9 +671,10 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202301031509;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zescape/Info.plist;
@@ -685,6 +694,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.zenika.zescape";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -697,7 +707,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -719,7 +729,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -740,7 +750,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -760,7 +770,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1111;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -817,7 +827,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
 			requirement = {
@@ -830,7 +840,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9271249A2860E43E00266293 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */;
 			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */

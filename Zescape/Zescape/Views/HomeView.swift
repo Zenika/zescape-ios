@@ -16,6 +16,9 @@ struct HomeView: View {
     private var titleQuizGame: String = "Quiz Game"
     private var titleGameThree: String = "Game 3"
     
+    @State var counter: Int = 0
+    var countTo: Int = 60
+    
     @StateObject var quizManager = QuizManagerVM()
     @Environment(\.colorScheme) var colorScheme
     
@@ -31,56 +34,36 @@ struct HomeView: View {
                     Text("NOM DU Z GAME")
                         .foregroundColor(colorScheme == .dark ?Color.white:Color.black)
                         .font(Font.custom("Nunito-Regular", size: 36))
-                    
-                    Text(" Volcamp is on 🔥 Retrouve les Hot Z et allume toi aussi le feu  🔥 🔥")
-                        .foregroundColor(Color.init(hex: "#A3A3A3"))
-                        .font(Font.custom("Nunito-Regular", size: 16))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 50.0)
-
-                    
                 }.frame(width:400 , height: 700, alignment: .top)
-              
-                HStack {
-                    ForEach(titles, id: \.self) { item in
-                        if(item == titleNFC){
-                            NavigationLink(destination: ScanView()) {
-                                customTextStyle(title: item)
-                            }
-                        }
-                        else {
-                            
-                            NavigationLink(destination: QRCodeScannerView()) {
-                                customTextStyle(title: item)
-                            }
-                        }
-                    }
-                    .padding(10.0)
-                }.frame(width:400 , height: 500, alignment: .top)
                 
                 VStack {
-                    ForEach(games, id: \.self) { item in
-                        if(item == titleGameColor){
-                            NavigationLink(destination: GameColorView(rGuess: 0, gGuess: 0, bGuess: 0)) {
-                                customTextStyle(title: item)
-                            }
-                        }
-                        else if(item == titleQuizGame){
-                            NavigationLink(destination: QuizView().environmentObject(quizManager))
-                            {
-                                customTextStyle(title: item)
-                                
-                            }
-                            
-                        }
+                    CountdownTimer()
+                    Text("🔥 Le temps est compté 🔥")
+                        .font(Font.custom("Nunito-Regular", size: 16))
+                        .padding(.bottom, 5.0)
+                    
+                    HStack {
+                        Text("Vous avez X minutes pour trouver tous les indices qui vous permettront d’arriver au coffre ... Bon courage !")
+                            .font(Font.custom("Nunito-Regular", size: 14))
                     }
-                }.padding(10.0).frame(width:400 , height: 300, alignment: .center)
+                    .padding(.horizontal, 30.0)
+                    
+                }.frame(width:400 , height: 550, alignment: .top)
+                
+                ZStack(alignment: .bottomTrailing) {
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    FloatingMenu()
+                        .padding()
+                }
+                
             }
             .toolbar {
                 ToolbarItem(placement: .principal) { // <3>
                     VStack {
                         Image("Logo")
-                            
+                        
                     }
                 }
             }

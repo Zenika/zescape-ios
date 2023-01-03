@@ -11,7 +11,7 @@ import SwiftUI
 class QuizManagerVM: ObservableObject {
     // Variables to set quiz and length of quiz
     private(set) var quiz: [Quiz.Result] = []
-    
+    private var selectedAnswer:Answer = Answer(text: "", isCorrect: false, isSelected: false)
     @Published private(set) var length = 0
 
     // Variables to set question and answers
@@ -151,12 +151,20 @@ class QuizManagerVM: ObservableObject {
     
     // Function to know that user click on Validate button
     func retrieveAnswer(answerId: UUID) -> Answer {
-        var selectedAnswer:Answer = Answer(text: "", isCorrect: false, isSelected: false)
         for index in answerChoices.indices {
             if(answerId == answerChoices[index].id){
                 selectedAnswer =  answerChoices[index]
             }
         }
         return selectedAnswer
+    }
+    
+    func labelForAnswer() -> String{
+        if(selectedAnswer.isCorrect){
+            return "Bonne réponse !"
+        }
+        else{
+            return "Mauvaise réponse !"
+        }
     }
 }

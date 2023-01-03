@@ -18,7 +18,7 @@ struct SplashView: View {
                 HomeView()
             } else {
 
-                Image("splashscreen")
+                Image("Splashscreen")
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity) // 1
