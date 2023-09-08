@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -378,7 +378,7 @@
 				};
 			};
 			buildConfigurationList = 929AF1712845006100E43F51 /* Build configuration list for PBXProject "Zescape" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -634,7 +634,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202301031509;
+				CURRENT_PROJECT_VERSION = 202309081537;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
@@ -652,7 +652,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
@@ -671,7 +671,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202301031509;
+				CURRENT_PROJECT_VERSION = 202309081537;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
@@ -690,7 +690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
@@ -707,11 +707,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1111;
+				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -729,11 +729,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1111;
+				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -750,10 +750,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1111;
+				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -770,10 +770,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1111;
+				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

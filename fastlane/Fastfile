@@ -1,34 +1,28 @@
-default_platform :ios
+#import_from_git(url: "git@github.com:mirego/fastlane-toolkit.git")
+import "../../../Fastlane-Template/Fastfile"
 
 platform :ios do
-
-  desc "Bump version and build number"
-  lane :bump_version_number_and_build_number do
-    # VERSION = last_git_tag(pattern: "*.*.*.*")
-    # increment_version_number_in_xcodeproj(
-    #   version_number: VERSION
-    # )
-    increment_build_number_in_xcodeproj(
-        target: "Zescape",
-        build_number: Time.now.strftime('%Y%m%d%H%M'),
-        xcodeproj: "./Zescape/Zescape.xcodeproj"
-    )
+  before_all do |lane|
+    setup_project
   end
 
-  lane :add_badge_alpha do |options|
-    add_badge(alpha: true)
+  desc "Init project variables"
+  lane :setup_project do
+    init_project(
+      xcodeproj: ENV["XCODEPROJ"],
+      target: ENV["TARGET"],
+      scheme: ENV["SCHEME"],
+      configuration: ENV["CONFIGURATION"],
+      output_name: ENV["OUTPUT_NAME"],
+      match_type: ENV["MAYCH_TYPE"]
+    ) 
   end
 
   desc "Build"
-  lane :build do |options|
-  # Build & export ipa
-    match(type: "adhoc", readonly: true)
-    gym(
-      scheme: "Zescape",
-      silent: options[:silent] || true,
-      project: "./Zescape/Zescape.xcodeproj",
-      configuration: "Release",
-      output_name: "Zescape"
-    )
+  lane :build_ios do
+    bump_version_number_and_build_number(version: ENV["REGEX"], build_number:ENV["BUILD_NUMBER"])
+    add_badge_alpha(badge:true) #true or false
+    download_certificates_and_profiles
+    build
   end
 end

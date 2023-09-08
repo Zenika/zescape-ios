@@ -13,28 +13,71 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-## iOS
-
-### ios bump_version_number_and_build_number
+### init_project
 
 ```sh
-[bundle exec] fastlane ios bump_version_number_and_build_number
+[bundle exec] fastlane init_project
+```
+
+Init project
+
+### bump_version_number_and_build_number
+
+```sh
+[bundle exec] fastlane bump_version_number_and_build_number
 ```
 
 Bump version and build number
 
-### ios add_badge_alpha
+### retrieve_version
 
 ```sh
-[bundle exec] fastlane ios add_badge_alpha
+[bundle exec] fastlane retrieve_version
 ```
 
 
 
-### ios build
+### add_badge_alpha
 
 ```sh
-[bundle exec] fastlane ios build
+[bundle exec] fastlane add_badge_alpha
+```
+
+Bump version and build number
+
+### download_certificates_and_profiles
+
+```sh
+[bundle exec] fastlane download_certificates_and_profiles
+```
+
+Download certificates and profiles
+
+### build
+
+```sh
+[bundle exec] fastlane build
+```
+
+Build iOS
+
+----
+
+
+## iOS
+
+### ios setup_project
+
+```sh
+[bundle exec] fastlane ios setup_project
+```
+
+Init project variables
+
+### ios build_ios
+
+```sh
+[bundle exec] fastlane ios build_ios
 ```
 
 Build
