@@ -69,6 +69,22 @@ Download certificates and profiles
 
 Build iOS
 
+### deploy
+
+```sh
+[bundle exec] fastlane deploy
+```
+
+Deploy iOS
+
+### generate_release_note
+
+```sh
+[bundle exec] fastlane generate_release_note
+```
+
+Generate release note between two tags
+
 ----
 
 
@@ -89,6 +105,22 @@ Init project variables
 ```
 
 Build
+
+### ios gen
+
+```sh
+[bundle exec] fastlane ios gen
+```
+
+Gen
+
+### ios deploy_ios
+
+```sh
+[bundle exec] fastlane ios deploy_ios
+```
+
+Deploy
 
 ----
 

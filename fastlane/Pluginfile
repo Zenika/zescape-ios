@@ -5,3 +5,4 @@
 gem 'fastlane-plugin-versioning'
 gem 'fastlane-plugin-badge'
 gem 'dotenv'
+gem 'fastlane-plugin-firebase_app_distribution'
