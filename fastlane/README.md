@@ -19,7 +19,7 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 [bundle exec] fastlane init_project
 ```
 
-Init project
+Init project with shared variables
 
 ### bump_version_number_and_build_number
 
@@ -35,15 +35,23 @@ Bump version and build number
 [bundle exec] fastlane retrieve_version
 ```
 
+Retrieve version with regex parameter
 
-
-### add_badge_alpha
+### display_badge_on_appIcon
 
 ```sh
-[bundle exec] fastlane add_badge_alpha
+[bundle exec] fastlane display_badge_on_appIcon
 ```
 
-Bump version and build number
+Add badge on the appIcon
+
+https://github.com/HazAT/badge
+
+Option 1 : No badge and display only version or not
+
+Option 2 : Alpha badge and display version or not and chosse the mode: dark or light
+
+Option 3 : Beta badge and display version or not and chosse the mode: dark or light
 
 ### download_certificates_and_profiles
 
