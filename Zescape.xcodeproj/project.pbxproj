@@ -51,6 +51,7 @@
 		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
 		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
 		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
+		92FFE5E82AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9271249B2860E43E00266293 /* CodeScanner in Frameworks */,
+				92FFE5E82AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +315,7 @@
 			name = Zescape;
 			packageProductDependencies = (
 				9271249A2860E43E00266293 /* CodeScanner */,
+				92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */,
 			);
 			productName = Zespace;
 			productReference = 929AF1762845006100E43F51 /* Zescape.app */;
@@ -388,6 +391,7 @@
 			mainGroup = 929AF16D2845006100E43F51;
 			packageReferences = (
 				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */,
+				92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 929AF1772845006100E43F51 /* Products */;
 			projectDirPath = "";
@@ -634,7 +638,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anthony MARQUET (C2732MJ562)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202309081537;
+				CURRENT_PROJECT_VERSION = 202309181531;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				ENABLE_PREVIEWS = YES;
@@ -652,7 +656,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
@@ -671,7 +675,7 @@
 				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202309081537;
+				CURRENT_PROJECT_VERSION = 202309181531;
 				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
 				DEVELOPMENT_TEAM = KVW94B6WF8;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
@@ -690,7 +694,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
 				PROVISIONING_PROFILE_SPECIFIER = "ZEscape Debug";
@@ -711,7 +715,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -733,7 +737,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -753,7 +757,7 @@
 				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -773,7 +777,7 @@
 				CURRENT_PROJECT_VERSION = 202309060815;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = "toto ^[0-9]+.[0-9]+.[0-9]+.[0-9]+$\n1.0.0.0\n";
+				MARKETING_VERSION = 0.0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -835,6 +839,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -842,6 +854,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner.git" */;
 			productName = CodeScanner;
+		};
+		92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

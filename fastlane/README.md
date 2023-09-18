@@ -29,6 +29,10 @@ Init project with shared variables
 
 Bump version and build number
 
+Version = Git tag value provided by the lane `retrieve_version` 
+
+Build_Number = Timestamp format
+
 ### retrieve_version
 
 ```sh
@@ -61,6 +65,8 @@ Option 3 : Beta badge and display version or not and chosse the mode: dark or li
 
 Download certificates and profiles
 
+Match docs : https://docs.fastlane.tools/actions/match/
+
 ### build
 
 ```sh
@@ -69,13 +75,25 @@ Download certificates and profiles
 
 Build iOS
 
-### deploy
+### deploy_firebase_app_tester
 
 ```sh
-[bundle exec] fastlane deploy
+[bundle exec] fastlane deploy_firebase_app_tester
 ```
 
-Deploy iOS
+Deploy iOS - AppTester
+
+Create Firebase token : https://firebase.google.com/docs/cli#cli-ci-systems
+
+### deploy_appstore
+
+```sh
+[bundle exec] fastlane deploy_appstore
+```
+
+Deploy iOS - AppStore
+
+Create API KEY : https://docs.fastlane.tools/app-store-connect-api/#using-fastlane-api-key-json-file
 
 ### generate_release_note
 
@@ -105,14 +123,6 @@ Init project variables
 ```
 
 Build
-
-### ios gen
-
-```sh
-[bundle exec] fastlane ios gen
-```
-
-Gen
 
 ### ios deploy_ios
 
