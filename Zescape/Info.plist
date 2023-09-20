@@ -2,10 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
+	<key>CFBundleURLTypes</key>
 	<array>
-		<string>Font/Nunito-Regular</string>
-		<string>Font/Nunito-Bold</string>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.zenika.zescape</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>zescape</string>
+			</array>
+		</dict>
+	</array>
+	<key>branch_key</key>
+	<dict>
+		<key>test</key>
+		<string>key_test_dBcykCI3zdJoV1SOjUMqfhhjyuir7jaS</string>
+	</dict>
+	<key>branch_universal_link_domains</key>
+	<array>
+		<string>ucpz4.test-app.link</string>
+		<string>ucpz4-alternate.test-app.link</string>
 	</array>
 </dict>
 </plist>
