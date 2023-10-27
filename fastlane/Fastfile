@@ -1,16 +1,16 @@
 #Choose your import : Local or Remote
 
 #Local Fastfile
-import "../../../Fastlane-Template/fastlane/ios/Fastfile"
+#import "../../../Fastlane-Template/fastlane/ios/Fastfile"
 
 #Remote Fastfile
-# import_from_git(
-#   url: "git@github.com:Zenika/Fastlane-Template.git", # The URL of the repository to import the Fastfile from.
-#   branch: "main", # The branch to checkout on the repository.
-#   path: "fastlane/ios/Fastfile", # The path of the Fastfile in the repository.
-#   version: "~> 0.0.13", # The version to checkout on the repository. IMPORTANT ! You must decalre the version with "~>" prefix
-#   cache_path: Dir.pwd # Don't change this path
-# )
+import_from_git(
+  url: "git@github.com:Zenika/Fastlane-Template.git", # The URL of the repository to import the Fastfile from.
+  branch: "main", # The branch to checkout on the repository.
+  path: "fastlane/ios/Fastfile", # The path of the Fastfile in the repository.
+  version: "~> 0.0.13", # The version to checkout on the repository. IMPORTANT ! You must decalre the version with "~>" prefix
+  cache_path: Dir.pwd # Don't change this path
+)
 
 platform :ios do
   before_all do |lane|
