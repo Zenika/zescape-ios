@@ -28,10 +28,12 @@ jobs:
     runs-on: self-hosted
     timeout-minutes: 25
     steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
       - name: Setup ruby
         run: rbenv local 3.0.0
       - name: Install Gem
-        run: pwd && cd .. && bundle install
+        run: bundle install
       - name: Fastlane - Create keychain
         run: fastlane ios init_keychain --env alpha
       - name: Fastlane - Download Apple certificate
