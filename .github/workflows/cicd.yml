@@ -7,7 +7,6 @@ on:
       - main
       - hotfix/**
       - release/**
-      - develop
   pull_request:
     branches:
       - feature/**
@@ -36,6 +35,6 @@ jobs:
         run: bundle install
       - name: Fastlane - Create keychain
         run: fastlane ios init_keychain --env alpha
-      - name: Fastlane - Download Apple certificate
+      - name: Fastlane - Build
         run: fastlane ios build_ios --env alpha
 
