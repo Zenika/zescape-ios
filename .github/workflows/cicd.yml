@@ -1,4 +1,4 @@
-name: Pipeline Android 🤖 & iOS 🍏
+name: Pipeline iOS 🍏
 on:
   push:
     tags:

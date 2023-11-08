@@ -1,0 +1,4 @@
+# app_identifier("com.zenika.zescape.alpha")
+# username("appleid.fastlane@zenika.com") # Your Apple Developer Portal username
+# type("adhoc")
+# git_url("git@github.com:Zenika/iOS-Match-Certificate.git")
