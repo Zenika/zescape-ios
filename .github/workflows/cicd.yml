@@ -4,9 +4,10 @@ on:
     tags:
       - '*'
     branches:
-      - main
-      - hotfix/**
-      - release/**
+      # - main
+      - develop
+      # - hotfix/**
+      # - release/**
   pull_request:
     branches:
       - feature/**
