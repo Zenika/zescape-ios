@@ -843,8 +843,8 @@
 				MARKETING_VERSION = 0.0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
 				PRODUCT_NAME = Zescape;
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.zenika.zescape";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.zenika.zescape";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.zenika.zescape";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.zenika.zescape";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
