@@ -26,7 +26,7 @@ platform :ios do
       configuration: ENV["CONFIGURATION"],
       output_directory: ENV["OUTPUT_DIRECTORY"],
       output_name: ENV["OUTPUT_NAME"],
-      signing_type: ENV["SIGNING_TYPE"]
+      signing_type: ENV["SIGNING_TYPE"] #app-store, validation, ad-hoc, package, enterprise, development, developer-id and mac-application
     ) 
   end
 
@@ -35,7 +35,7 @@ platform :ios do
     download_certificates_and_profiles(
       git_url: ENV["GIT_URL"],
       app_identifier: ENV["APP_IDENTIFIER"], 
-      type: ENV["MATCH_TYPE"], 
+      type: ENV["MATCH_TYPE"], #appstore, adhoc, enterprise, development
       team_id: ENV["TEAM_ID"], 
       username: ENV["USERNAME"]
     )
@@ -50,18 +50,17 @@ platform :ios do
 
   desc "Deploy"
   lane :deploy_ios do |options|
-    generate_release_note(env: ENV["RELEASE_NOTE_ENV"])
-
-    #Choose the deploy lane: deploy_firebase_app_tester or deploy_appstore
-    deploy_firebase_app_tester(
-      token: ENV["FIREBASE_TOKEN"],
-      googleservice_info_plist_path: "./GoogleService-Info.plist"
-    )
-    
-    # deploy_appstore(
-    #   team_id: ENV["TEAM_ID"],
-    #   team_name: ENV["TEAM_NAME"]
-    # )
-
+    if ENV["SIGNING_TYPE"] != "app-store"
+      generate_release_note(env: ENV["RELEASE_NOTE_ENV"])
+      deploy_firebase_app_tester(
+        token: ENV["FIREBASE_TOKEN"],
+        googleservice_info_plist_path: "./GoogleService-Info.plist"
+      )
+    else
+      deploy_appstore(
+        team_id: ENV["TEAM_ID"],
+        team_name: ENV["TEAM_NAME"]
+      )
+    end
   end
 end
