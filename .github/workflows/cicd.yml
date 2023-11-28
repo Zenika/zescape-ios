@@ -1,0 +1,59 @@
+name: Pipeline Github
+on:
+  push:
+    tags:
+      - '*'
+    branches:
+      # - main
+      - develop
+      # - hotfix/**
+      # - release/**
+  pull_request:
+    branches:
+      - feature/**
+    types: [ opened, reopened, synchronize, labeled ]
+  workflow_dispatch:
+    inputs:
+      build-ios:
+        description: Build iOS app
+        required: true
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build-ipa-alpha:
+    name: 🚀 iOS Build - Alpha 🍏
+    runs-on: self-hosted
+    timeout-minutes: 25
+    if: github.ref != 'refs/heads/develop'
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+      - name: Setup ruby
+        run: rbenv local 3.0.0
+      - name: Install Gem
+        run: bundle install
+      - name: Fastlane - Create keychain
+        run: fastlane ios init_keychain --env alpha
+      - name: Fastlane - Build
+        run: fastlane ios build_ios --env alpha
+
+  build-ipa-prod:     
+    name: 🚀 iOS Build - Prod 🍏
+    runs-on: self-hosted
+    timeout-minutes: 25
+    if: github.ref == 'refs/heads/develop'
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+      - name: Setup ruby
+        run: rbenv local 3.0.0
+      - name: Install Gem
+        run: bundle install
+      - name: Fastlane - Create keychain
+        run: fastlane ios init_keychain --env prod
+      - name: Fastlane - Build
+        run: fastlane ios build_ios --env prod
+

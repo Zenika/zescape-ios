@@ -1,48 +1,66 @@
-default_platform :ios
+#Choose your import : Local or Remote
+
+#Local Fastfile
+#import "../../../Fastlane-Template/fastlane/ios/Fastfile"
+
+#Remote Fastfile
+import_from_git(
+  url: "git@github.com:Zenika/Fastlane-Template.git", # The URL of the repository to import the Fastfile from.
+  branch: "main", # The branch to checkout on the repository.
+  path: "fastlane/ios/Fastfile", # The path of the Fastfile in the repository.
+  version: "~> 0.0.13", # The version to checkout on the repository. IMPORTANT ! You must decalre the version with "~>" prefix
+  cache_path: Dir.pwd # Don't change this path
+)
 
 platform :ios do
-  # before_all do
-  #   setup_circle_ci
-  # end
+  before_all do |lane|
+    setup_project
+  end
 
-  desc "Build"
-  lane :build do |options|
-  # Build & export ipa
-    match(type: "adhoc", readonly: true)
-    gym(
-      scheme: "Zescape",
-      silent: options[:silent] || true,
-      project: "./Zescape/Zescape.xcodeproj",
-      configuration: "Release",
-      output_name: "Zescape"
+  desc "Init project variables"
+  lane :setup_project do
+    init_project(
+      xcodeproj: ENV["XCODEPROJ"],
+      target: ENV["TARGET"],
+      scheme: ENV["SCHEME"],
+      configuration: ENV["CONFIGURATION"],
+      output_directory: ENV["OUTPUT_DIRECTORY"],
+      output_name: ENV["OUTPUT_NAME"],
+      signing_type: ENV["SIGNING_TYPE"] #app-store, validation, ad-hoc, package, enterprise, development, developer-id and mac-application
+    ) 
+  end
+
+  desc "Init Keychain and retrieve certificates and profiles"
+  lane :init_keychain do
+    download_certificates_and_profiles(
+      git_url: ENV["GIT_URL"],
+      app_identifier: ENV["APP_IDENTIFIER"], 
+      type: ENV["MATCH_TYPE"], #appstore, adhoc, enterprise, development
+      team_id: ENV["TEAM_ID"], 
+      username: ENV["USERNAME"]
     )
   end
 
-  # desc "Runs all the tests"
-  # lane :test do
-  #   scan
-  #   snapshot
-  # end
+  desc "Build"
+  lane :build_ios do
+    #bump_version_number_and_build_number(version: ENV["REGEX"], build_number:ENV["BUILD_NUMBER"])
+    #display_badge_on_appIcon(badge: "alpha", dark:true, version:false) #badge: alpha or beta or no-badge, dark: true or false(light) 
+    build
+  end
 
-  # desc "Ad-hoc build"
-  # lane :adhoc do
-  #   match(type: "adhoc")
-  #   gym(export_method: "ad-hoc")
-  # end
-
-  # desc "Submit a new Beta Build to Apple TestFlight"
-  # desc "This will also make sure the profile is up to date"
-  # lane :beta do
-  #   match(type: "appstore")
-  #   gym(export_method: "app-store")
-  # end
-
-  # desc "Deploy a new version to the App Store"
-  # lane :release do
-  #   # match(type: "appstore")
-  #   # snapshot
-  #   gym # Build your app - more options available
-  #   deliver(force: true)
-  #   # frameit
-  # end
+  desc "Deploy"
+  lane :deploy_ios do |options|
+    if ENV["SIGNING_TYPE"] != "app-store"
+      generate_release_note(env: ENV["RELEASE_NOTE_ENV"])
+      deploy_firebase_app_tester(
+        token: ENV["FIREBASE_TOKEN"],
+        googleservice_info_plist_path: "./GoogleService-Info.plist"
+      )
+    else
+      deploy_appstore(
+        team_id: ENV["TEAM_ID"],
+        team_name: ENV["TEAM_NAME"]
+      )
+    end
+  end
 end

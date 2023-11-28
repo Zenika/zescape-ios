@@ -1,0 +1,74 @@
+{
+	"response_code": 0,
+	"results": [{
+		"category": "Science & Nature",
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.",
+		"correct_answer": "low, all",
+		"incorrect_answers": ["low, some", "high, all", "high, some"]
+	}, {
+		"category": "General Knowledge",
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Which of the following chemicals are found in eggplant seeds?",
+		"correct_answer": "Nicotine",
+		"incorrect_answers": ["Mescaline", "Cyanide", "Psilocybin"]
+	}, {
+		"category": "Entertainment: Cartoon & Animations",
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "What is the cartoon character, Andy Capp, known as in Germany?",
+		"correct_answer": "Willi Wakker",
+		"incorrect_answers": ["Dick Tingeler", "Helmut Schmacker", "Rod Tapper"]
+	}, {
+		"category": "Entertainment: Film",
+		"type": "multiple",
+		"difficulty": "easy",
+		"question": "In the movie &quot;Spaceballs&quot;, what are the Spaceballs attempting to steal from Planet Druidia?",
+		"correct_answer": "Air",
+		"incorrect_answers": ["The Schwartz", "Princess Lonestar", "Meatballs"]
+	}, {
+		"category": "Entertainment: Video Games",
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Which character, in the game &quot;Morenatsu&quot;, has the most possible endings to their route, at a total of four different endings?",
+		"correct_answer": "Shin Kuroi",
+		"incorrect_answers": ["Kouya Aotsuki", "Soutarou Touno", "Torahiko Ooshima"]
+	}, {
+		"category": "History",
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which historical conflict killed the most people?",
+		"correct_answer": "World War II",
+		"incorrect_answers": ["Taiping Rebellion", "Three Kingdoms War", "Mongol conquests"]
+	}, {
+		"category": "Entertainment: Cartoon & Animations",
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "In &quot;Gravity Falls&quot;, the character Bill Cipher remarks that &quot;the universe is what?&quot;",
+		"correct_answer": "A hologram ",
+		"incorrect_answers": ["An illusion ", "A simulation", "Corrupting"]
+	}, {
+		"category": "Celebrities",
+		"type": "multiple",
+		"difficulty": "hard",
+		"question": "Who was Donald Trump&#039;s first wife?",
+		"correct_answer": "Ivana Zeln&iacute;\u010dkov&aacute;",
+		"incorrect_answers": ["Melania Knauss", "Marla Maples", "Nancy Davis"]
+	}, {
+		"category": "History",
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Which U.S. President was famously &#039;attacked&#039; by a swimming rabbit?",
+		"correct_answer": "Jimmy Carter",
+		"incorrect_answers": ["Ronald Reagan", "Lydon B. Johnson", "Gerald Ford"]
+	}, {
+		"category": "Entertainment: Video Games",
+		"type": "multiple",
+		"difficulty": "medium",
+		"question": "Who was Tetris created by?",
+		"correct_answer": "Alexey Pajitnov",
+		"incorrect_answers": ["Toru Iwatani", "Allan Alcorn", "William Higinbotham"]
+	}]
+}

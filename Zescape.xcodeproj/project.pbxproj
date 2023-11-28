@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		920EBAD72846352000AFB78E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD62846352000AFB78E /* SplashView.swift */; };
+		920EBAD92846356700AFB78E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBAD82846356700AFB78E /* HomeView.swift */; };
+		920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920EBADA2846364B00AFB78E /* GameColorView.swift */; };
+		9271249B2860E43E00266293 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9271249A2860E43E00266293 /* CodeScanner */; };
+		9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281198E28537A5D000B2BC5 /* ScanView.swift */; };
+		9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */; };
+		928194812849FE7700B1853A /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928194802849FE7700B1853A /* NFCUtility.swift */; };
+		92819483284A014E00B1853A /* NFCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92819482284A014E00B1853A /* NFCModel.swift */; };
+		9298D4EB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */; };
+		9298D4EC28881F5D00B9DEDB /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */; };
+		9298D4ED28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */; };
+		9298D4EE28881F5D00B9DEDB /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */; };
+		9298D4EF28881F5D00B9DEDB /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */; };
+		9298D4F028881F5D00B9DEDB /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */; };
+		9298D4F128881F5D00B9DEDB /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */; };
+		9298D4F228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */; };
+		9298D4F328881F5D00B9DEDB /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */; };
+		9298D4F428881F5D00B9DEDB /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */; };
+		9298D4F528881F5D00B9DEDB /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */; };
+		9298D4F628881F5D00B9DEDB /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */; };
+		9298D4F728881F5D00B9DEDB /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */; };
+		9298D4F828881F5D00B9DEDB /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */; };
+		9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */; };
+		9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */; };
+		9298D4FF2888322200B9DEDB /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9298D4FE2888322200B9DEDB /* questions.json */; };
+		929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AA91928A2A1E60097B06B /* FloatingMenu.swift */; };
+		929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1792845006100E43F51 /* ZespaceApp.swift */; };
+		929AF17C2845006100E43F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF17B2845006100E43F51 /* ContentView.swift */; };
+		929AF17E2845006500E43F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF17D2845006500E43F51 /* Assets.xcassets */; };
+		929AF1812845006500E43F51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929AF1802845006500E43F51 /* Preview Assets.xcassets */; };
+		929AF18B2845006500E43F51 /* ZescapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF18A2845006500E43F51 /* ZescapeTests.swift */; };
+		929AF1952845006500E43F51 /* ZescapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1942845006500E43F51 /* ZescapeUITests.swift */; };
+		929AF1972845006500E43F51 /* ZescapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */; };
+		92B361B92872E38F0098972E /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361B82872E38F0098972E /* QuestionView.swift */; };
+		92B361BB2872E4BD0098972E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BA2872E4BD0098972E /* ProgressBar.swift */; };
+		92B361BE2872E7130098972E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BD2872E7130098972E /* Answer.swift */; };
+		92B361C02872E76B0098972E /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361BF2872E76B0098972E /* AnswerRow.swift */; };
+		92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C1287332CA0098972E /* PrimaryButton.swift */; };
+		92B361C42873344D0098972E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B361C32873344D0098972E /* Quiz.swift */; };
+		92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */; };
+		92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8AA70289C11D60074265C /* CountdownTimer.swift */; };
+		92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC20182875A5C500B55761 /* QuizManagerVM.swift */; };
+		92FC201B2876FDC300B55761 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201A2876FDC300B55761 /* QuizView.swift */; };
+		92FC201D287828B600B55761 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC201C287828B600B55761 /* Color.swift */; };
+		92FFE5E82AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929AF1872845006500E43F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929AF16E2845006100E43F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929AF1752845006100E43F51;
+			remoteInfo = Zespace;
+		};
+		929AF1912845006500E43F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929AF16E2845006100E43F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929AF1752845006100E43F51;
+			remoteInfo = Zespace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		920EBAD62846352000AFB78E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		920EBAD82846356700AFB78E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		920EBADA2846364B00AFB78E /* GameColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColorView.swift; sourceTree = "<group>"; };
+		9281198E28537A5D000B2BC5 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerResultView.swift; sourceTree = "<group>"; };
+		9281947F2849FDFB00B1853A /* Zescape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zescape.entitlements; sourceTree = "<group>"; };
+		928194802849FE7700B1853A /* NFCUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
+		92819482284A014E00B1853A /* NFCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCModel.swift; sourceTree = "<group>"; };
+		9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9298D4FE2888322200B9DEDB /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		929AA91928A2A1E60097B06B /* FloatingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenu.swift; sourceTree = "<group>"; };
+		929AF1762845006100E43F51 /* Zescape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zescape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		929AF1792845006100E43F51 /* ZespaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZespaceApp.swift; sourceTree = "<group>"; };
+		929AF17B2845006100E43F51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		929AF17D2845006500E43F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		929AF1802845006500E43F51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		929AF1862845006500E43F51 /* ZescapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZescapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929AF18A2845006500E43F51 /* ZescapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZescapeTests.swift; sourceTree = "<group>"; };
+		929AF1902845006500E43F51 /* ZescapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZescapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		929AF1942845006500E43F51 /* ZescapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZescapeUITests.swift; sourceTree = "<group>"; };
+		929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZescapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92B361B82872E38F0098972E /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		92B361BA2872E4BD0098972E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		92B361BD2872E7130098972E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		92B361BF2872E76B0098972E /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		92B361C1287332CA0098972E /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		92B361C32873344D0098972E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		92E8AA70289C11D60074265C /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		92FC20182875A5C500B55761 /* QuizManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManagerVM.swift; sourceTree = "<group>"; };
+		92FC201A2876FDC300B55761 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		92FC201C287828B600B55761 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929AF1732845006100E43F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9271249B2860E43E00266293 /* CodeScanner in Frameworks */,
+				92FFE5E82AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF1832845006500E43F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF18D2845006500E43F51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		928C77DF28461273008E2085 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				920EBAD62846352000AFB78E /* SplashView.swift */,
+				920EBAD82846356700AFB78E /* HomeView.swift */,
+				920EBADA2846364B00AFB78E /* GameColorView.swift */,
+				92C48CBB2847A7F5001C83F8 /* QrCodeScannerView.swift */,
+				9281947D2849F77900B1853A /* QRCodeScannerResultView.swift */,
+				9281198E28537A5D000B2BC5 /* ScanView.swift */,
+				92B361B82872E38F0098972E /* QuestionView.swift */,
+				92FC201A2876FDC300B55761 /* QuizView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9298D4DA28881F3C00B9DEDB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9298D4E028881F5D00B9DEDB /* Nunito-Black.ttf */,
+				9298D4EA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf */,
+				9298D4DC28881F5D00B9DEDB /* Nunito-Bold.ttf */,
+				9298D4E328881F5D00B9DEDB /* Nunito-BoldItalic.ttf */,
+				9298D4E428881F5D00B9DEDB /* Nunito-ExtraBold.ttf */,
+				9298D4DB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf */,
+				9298D4E628881F5D00B9DEDB /* Nunito-ExtraLight.ttf */,
+				9298D4E228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf */,
+				9298D4E928881F5D00B9DEDB /* Nunito-Italic.ttf */,
+				9298D4E528881F5D00B9DEDB /* Nunito-Light.ttf */,
+				9298D4E728881F5D00B9DEDB /* Nunito-LightItalic.ttf */,
+				9298D4DE28881F5D00B9DEDB /* Nunito-Medium.ttf */,
+				9298D4E128881F5D00B9DEDB /* Nunito-MediumItalic.ttf */,
+				9298D4DF28881F5D00B9DEDB /* Nunito-Regular.ttf */,
+				9298D4E828881F5D00B9DEDB /* Nunito-SemiBold.ttf */,
+				9298D4DD28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9298D4FB2888316C00B9DEDB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9298D4FE2888322200B9DEDB /* questions.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		929AF16D2845006100E43F51 = {
+			isa = PBXGroup;
+			children = (
+				929AF1782845006100E43F51 /* Zescape */,
+				929AF1892845006500E43F51 /* ZescapeTests */,
+				929AF1932845006500E43F51 /* ZescapeUITests */,
+				929AF1772845006100E43F51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929AF1772845006100E43F51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929AF1762845006100E43F51 /* Zescape.app */,
+				929AF1862845006500E43F51 /* ZescapeTests.xctest */,
+				929AF1902845006500E43F51 /* ZescapeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929AF1782845006100E43F51 /* Zescape */ = {
+			isa = PBXGroup;
+			children = (
+				9281947F2849FDFB00B1853A /* Zescape.entitlements */,
+				92B361BC2872E5A70098972E /* Component */,
+				9298D4DA28881F3C00B9DEDB /* Fonts */,
+				92C48CAD284776D4001C83F8 /* Model */,
+				9298D4FB2888316C00B9DEDB /* Mocks */,
+				92C48CB228479F14001C83F8 /* Utilities */,
+				928C77DF28461273008E2085 /* Views */,
+				92E8AA6F289ABB6F0074265C /* ViewModel */,
+				929AF1792845006100E43F51 /* ZespaceApp.swift */,
+				929AF17B2845006100E43F51 /* ContentView.swift */,
+				929AF17D2845006500E43F51 /* Assets.xcassets */,
+				929AF17F2845006500E43F51 /* Preview Content */,
+			);
+			path = Zescape;
+			sourceTree = "<group>";
+		};
+		929AF17F2845006500E43F51 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				929AF1802845006500E43F51 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		929AF1892845006500E43F51 /* ZescapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				929AF18A2845006500E43F51 /* ZescapeTests.swift */,
+			);
+			path = ZescapeTests;
+			sourceTree = "<group>";
+		};
+		929AF1932845006500E43F51 /* ZescapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				929AF1942845006500E43F51 /* ZescapeUITests.swift */,
+				929AF1962845006500E43F51 /* ZescapeUITestsLaunchTests.swift */,
+			);
+			path = ZescapeUITests;
+			sourceTree = "<group>";
+		};
+		92B361BC2872E5A70098972E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				92B361BA2872E4BD0098972E /* ProgressBar.swift */,
+				92B361BF2872E76B0098972E /* AnswerRow.swift */,
+				92B361C1287332CA0098972E /* PrimaryButton.swift */,
+				92E8AA70289C11D60074265C /* CountdownTimer.swift */,
+				929AA91928A2A1E60097B06B /* FloatingMenu.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		92C48CAD284776D4001C83F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92819482284A014E00B1853A /* NFCModel.swift */,
+				92B361BD2872E7130098972E /* Answer.swift */,
+				92B361C32873344D0098972E /* Quiz.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92C48CB228479F14001C83F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				928194802849FE7700B1853A /* NFCUtility.swift */,
+				92FC201C287828B600B55761 /* Color.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		92E8AA6F289ABB6F0074265C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92FC20182875A5C500B55761 /* QuizManagerVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929AF1752845006100E43F51 /* Zescape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929AF19A2845006500E43F51 /* Build configuration list for PBXNativeTarget "Zescape" */;
+			buildPhases = (
+				929AF1722845006100E43F51 /* Sources */,
+				929AF1732845006100E43F51 /* Frameworks */,
+				929AF1742845006100E43F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zescape;
+			packageProductDependencies = (
+				9271249A2860E43E00266293 /* CodeScanner */,
+				92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */,
+			);
+			productName = Zespace;
+			productReference = 929AF1762845006100E43F51 /* Zescape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929AF1852845006500E43F51 /* ZescapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929AF19D2845006500E43F51 /* Build configuration list for PBXNativeTarget "ZescapeTests" */;
+			buildPhases = (
+				929AF1822845006500E43F51 /* Sources */,
+				929AF1832845006500E43F51 /* Frameworks */,
+				929AF1842845006500E43F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929AF1882845006500E43F51 /* PBXTargetDependency */,
+			);
+			name = ZescapeTests;
+			productName = ZespaceTests;
+			productReference = 929AF1862845006500E43F51 /* ZescapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		929AF18F2845006500E43F51 /* ZescapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929AF1A02845006500E43F51 /* Build configuration list for PBXNativeTarget "ZescapeUITests" */;
+			buildPhases = (
+				929AF18C2845006500E43F51 /* Sources */,
+				929AF18D2845006500E43F51 /* Frameworks */,
+				929AF18E2845006500E43F51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929AF1922845006500E43F51 /* PBXTargetDependency */,
+			);
+			name = ZescapeUITests;
+			productName = ZespaceUITests;
+			productReference = 929AF1902845006500E43F51 /* ZescapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929AF16E2845006100E43F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					929AF1752845006100E43F51 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					929AF1852845006500E43F51 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 929AF1752845006100E43F51;
+					};
+					929AF18F2845006500E43F51 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 929AF1752845006100E43F51;
+					};
+				};
+			};
+			buildConfigurationList = 929AF1712845006100E43F51 /* Build configuration list for PBXProject "Zescape" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 929AF16D2845006100E43F51;
+			packageReferences = (
+				927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 929AF1772845006100E43F51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929AF1752845006100E43F51 /* Zescape */,
+				929AF1852845006500E43F51 /* ZescapeTests */,
+				929AF18F2845006500E43F51 /* ZescapeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929AF1742845006100E43F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929AF1812845006500E43F51 /* Preview Assets.xcassets in Resources */,
+				9298D4FA28881F5D00B9DEDB /* Nunito-BlackItalic.ttf in Resources */,
+				9298D4F628881F5D00B9DEDB /* Nunito-ExtraLight.ttf in Resources */,
+				9298D4F228881F5D00B9DEDB /* Nunito-ExtraLightItalic.ttf in Resources */,
+				929AF17E2845006500E43F51 /* Assets.xcassets in Resources */,
+				9298D4FF2888322200B9DEDB /* questions.json in Resources */,
+				9298D4F428881F5D00B9DEDB /* Nunito-ExtraBold.ttf in Resources */,
+				9298D4F328881F5D00B9DEDB /* Nunito-BoldItalic.ttf in Resources */,
+				9298D4EE28881F5D00B9DEDB /* Nunito-Medium.ttf in Resources */,
+				9298D4F028881F5D00B9DEDB /* Nunito-Black.ttf in Resources */,
+				9298D4F828881F5D00B9DEDB /* Nunito-SemiBold.ttf in Resources */,
+				9298D4EC28881F5D00B9DEDB /* Nunito-Bold.ttf in Resources */,
+				9298D4EF28881F5D00B9DEDB /* Nunito-Regular.ttf in Resources */,
+				9298D4F528881F5D00B9DEDB /* Nunito-Light.ttf in Resources */,
+				9298D4F128881F5D00B9DEDB /* Nunito-MediumItalic.ttf in Resources */,
+				9298D4ED28881F5D00B9DEDB /* Nunito-SemiBoldItalic.ttf in Resources */,
+				9298D4F728881F5D00B9DEDB /* Nunito-LightItalic.ttf in Resources */,
+				9298D4EB28881F5D00B9DEDB /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				9298D4F928881F5D00B9DEDB /* Nunito-Italic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF1842845006500E43F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF18E2845006500E43F51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929AF1722845006100E43F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92819483284A014E00B1853A /* NFCModel.swift in Sources */,
+				9281947E2849F77900B1853A /* QRCodeScannerResultView.swift in Sources */,
+				920EBADB2846364B00AFB78E /* GameColorView.swift in Sources */,
+				920EBAD72846352000AFB78E /* SplashView.swift in Sources */,
+				920EBAD92846356700AFB78E /* HomeView.swift in Sources */,
+				92E8AA71289C11D70074265C /* CountdownTimer.swift in Sources */,
+				92C48CBC2847A7F5001C83F8 /* QrCodeScannerView.swift in Sources */,
+				929AF17C2845006100E43F51 /* ContentView.swift in Sources */,
+				92B361BE2872E7130098972E /* Answer.swift in Sources */,
+				92FC201D287828B600B55761 /* Color.swift in Sources */,
+				929AA91A28A2A1E60097B06B /* FloatingMenu.swift in Sources */,
+				92B361C02872E76B0098972E /* AnswerRow.swift in Sources */,
+				92B361B92872E38F0098972E /* QuestionView.swift in Sources */,
+				9281198F28537A5D000B2BC5 /* ScanView.swift in Sources */,
+				92FC201B2876FDC300B55761 /* QuizView.swift in Sources */,
+				92FC20192875A5C500B55761 /* QuizManagerVM.swift in Sources */,
+				928194812849FE7700B1853A /* NFCUtility.swift in Sources */,
+				92B361C2287332CA0098972E /* PrimaryButton.swift in Sources */,
+				92B361BB2872E4BD0098972E /* ProgressBar.swift in Sources */,
+				92B361C42873344D0098972E /* Quiz.swift in Sources */,
+				929AF17A2845006100E43F51 /* ZespaceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF1822845006500E43F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929AF18B2845006500E43F51 /* ZescapeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929AF18C2845006500E43F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929AF1972845006500E43F51 /* ZescapeUITestsLaunchTests.swift in Sources */,
+				929AF1952845006500E43F51 /* ZescapeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		929AF1882845006500E43F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929AF1752845006100E43F51 /* Zescape */;
+			targetProxy = 929AF1872845006500E43F51 /* PBXContainerItemProxy */;
+		};
+		929AF1922845006500E43F51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929AF1752845006100E43F51 /* Zescape */;
+			targetProxy = 929AF1912845006500E43F51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		920BD2ED2AFB8DA80050ACB7 /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Alpha;
+		};
+		920BD2EE2AFB8DA80050ACB7 /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202311081027;
+				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zescape/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.alpha;
+				PRODUCT_NAME = Zescape;
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.zenika.zescape.alpha";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AdHoc com.zenika.zescape.alpha";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Alpha;
+		};
+		920BD2EF2AFB8DA80050ACB7 /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zescape.app/Zescape";
+			};
+			name = Alpha;
+		};
+		920BD2F02AFB8DA80050ACB7 /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zespace;
+			};
+			name = Alpha;
+		};
+		929AF1982845006500E43F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		929AF1992845006500E43F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929AF19B2845006500E43F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: Zenika Zenika (3J32BJLPDB)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202311061600;
+				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zescape/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.alpha;
+				PRODUCT_NAME = Zescape;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.zenika.zescape.alpha";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.zenika.zescape.alpha";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		929AF19C2845006500E43F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Zescape/Zescape.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution: ZENIKA (KVW94B6WF8)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202311081027;
+				DEVELOPMENT_ASSET_PATHS = "\"Zescape/Preview Content\"";
+				DEVELOPMENT_TEAM = KVW94B6WF8;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KVW94B6WF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zescape/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to read QRCode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape;
+				PRODUCT_NAME = Zescape;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.zenika.zescape";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.zenika.zescape";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		929AF19E2845006500E43F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zescape.app/Zescape";
+			};
+			name = Debug;
+		};
+		929AF19F2845006500E43F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zescape.app/Zescape";
+			};
+			name = Release;
+		};
+		929AF1A12845006500E43F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zespace;
+			};
+			name = Debug;
+		};
+		929AF1A22845006500E43F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 202309060815;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 0.0.0.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenika.zescape.ZespaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zespace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929AF1712845006100E43F51 /* Build configuration list for PBXProject "Zescape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929AF1982845006500E43F51 /* Debug */,
+				920BD2ED2AFB8DA80050ACB7 /* Alpha */,
+				929AF1992845006500E43F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929AF19A2845006500E43F51 /* Build configuration list for PBXNativeTarget "Zescape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929AF19B2845006500E43F51 /* Debug */,
+				920BD2EE2AFB8DA80050ACB7 /* Alpha */,
+				929AF19C2845006500E43F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929AF19D2845006500E43F51 /* Build configuration list for PBXNativeTarget "ZescapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929AF19E2845006500E43F51 /* Debug */,
+				920BD2EF2AFB8DA80050ACB7 /* Alpha */,
+				929AF19F2845006500E43F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929AF1A02845006500E43F51 /* Build configuration list for PBXNativeTarget "ZescapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929AF1A12845006500E43F51 /* Debug */,
+				920BD2F02AFB8DA80050ACB7 /* Alpha */,
+				929AF1A22845006500E43F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9271249A2860E43E00266293 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 927124992860E43E00266293 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		92FFE5E72AB0954A00C4CDB6 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FFE5E62AB0954A00C4CDB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 929AF16E2845006100E43F51 /* Project object */;
+}

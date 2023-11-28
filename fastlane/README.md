@@ -15,13 +15,37 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios build
+### ios setup_project
 
 ```sh
-[bundle exec] fastlane ios build
+[bundle exec] fastlane ios setup_project
+```
+
+Init project variables
+
+### ios init_keychain
+
+```sh
+[bundle exec] fastlane ios init_keychain
+```
+
+Init Keychain and retrieve certificates and profiles
+
+### ios build_ios
+
+```sh
+[bundle exec] fastlane ios build_ios
 ```
 
 Build
+
+### ios deploy_ios
+
+```sh
+[bundle exec] fastlane ios deploy_ios
+```
+
+Deploy
 
 ----
 
